@@ -176,3 +176,21 @@ form.addEventListener("submit", function (e) {
 	}, 7000);
 	postToDataBase();
 });
+
+// back to top icon
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+	var goTop = document.querySelector('.go-top');
+
+	if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+
+		goTop.style.opacity = 1;
+		goTop.style.display = "block";
+
+	} else {
+		goTop.style.opacity = "0";
+		goTop.style.display = "none";
+	}
+}
