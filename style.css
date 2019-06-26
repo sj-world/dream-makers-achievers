@@ -315,7 +315,6 @@ div#preloader {
 	.whatsapp {
 		width: 28px;
 	}
-
 	.whatsapp:hover {
 		width: 35px;
 	}
@@ -375,7 +374,8 @@ div#preloader {
 		left: -150px;
 		transition: 0.8s;
 		/* background-color: rgba(156, 245, 168, 0.959); */
-		background-color: hsl(104, 46%, 62%) !important;
+		/* background-color: hsl(104, 46%, 62%) !important; */
+		background-color: hsla(197, 99%, 45%, 0.94) !important;
 		top: 0;
 		bottom: -200px;
 		width: 150px;
@@ -392,7 +392,8 @@ div#preloader {
 		font-weight: 500 !important;
 	}
 	.top-sticky-header nav ul li a:hover {
-		color: hsl(108, 100%, 18%) !important;
+		/* color: hsl(108, 100%, 18%) !important; */
+		color: rgb(0, 70, 94) !important;
 		font-weight: 600 !important;
 	}
 	.fa-bars, .fa-times-rectangle {
@@ -407,17 +408,20 @@ div#preloader {
 		display: block;
 		right: 20px;
 		top: 22.5px;
-		color: rgba(107, 167, 29, 0.678);
+		/* color: rgba(107, 167, 29, 0.678); */
+		color: hsla(197, 99%, 45%, 0.94) !important;
 		display: block !important;
 		font-size: 24px;
 		cursor: pointer;
 	}
 	.fa-align-right:hover {
-		color: rgba(13, 122, 3, 0.877);
+		/* color: rgba(13, 122, 3, 0.877); */
+		color: rgb(0, 115, 153) !important;
 	}
 	.fa-times-rectangle {
 		z-index: 200;
-		color: rgba(107, 167, 29, 0.678);
+		/* color: rgba(107, 167, 29, 0.678); */
+		color: hsla(197, 99%, 45%, 0.94) !important;
 		position: fixed;
 		right: 20px;
 		top: 22.5px;
@@ -425,7 +429,8 @@ div#preloader {
 		font-size: 26px;
 	}
 	.fa-times-rectangle:hover {
-		color: rgba(13, 122, 3, 0.877);
+		/* color: rgba(13, 122, 3, 0.877); */
+		color: rgb(0, 115, 153) !important;
 	}
 	/* main sticky header end*/
 	/* side social links fixed */
