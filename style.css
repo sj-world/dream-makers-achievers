@@ -74,12 +74,15 @@ div#preloader {
 
 .top-sticky-header nav ul li a:hover {
 	/* color: hsla(130, 100%, 37%, 0.74) !important; */
-	color: rgb(2, 192, 255) !important;
+	color: rgb(116, 188, 212) !important;
+	/* color: rgb(9, 169, 223) !important; */
 }
 
 .top-sticky-header nav ul li a:focus {
 	/* color: hsl(147, 100%, 29%) !important; */
-	color: rgb(0, 130, 173) !important;
+	/* color: rgb(15, 113, 146) !important; */
+	color: rgb(60, 91, 135) !important;
+	font-weight: 600;
 }
 
 /* main sticky header end */
@@ -268,13 +271,18 @@ div#preloader {
 
 /* TODO: PC media query */
 
-@media screen and (min-width: 883px) {
+@media screen and (min-width: 973px) {
 	/* preloader */
 	div#preloader img {
-		width: 400px;
-		height: 48%;
+		width: 160px;
+		height: 25%;
 	}
 	/* preloader end */
+	.headerLogo {
+		/* width: 200px !important; */
+		height: 33px;
+		/* border: 1px solid; */
+	}
 	/* main sticky header */
 	.top-sticky-header {
 		height: 70px;
@@ -330,6 +338,7 @@ div#preloader {
 		height: 11%;
 	}
 	.alert-inner-text {
+		color: rgb(0, 0, 0) !important;
 		/* border: 2px solid; */
 		/* height: 100%; */
 		margin-top: 10px;
@@ -348,11 +357,11 @@ div#preloader {
 
 /* TODO:  mobile media query */
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 972px) {
 	/* preloader */
 	div#preloader img {
-		width: 350px;
-		height: 47%;
+		width: 100px;
+		height: 18%;
 	}
 	/* preloader  */
 	/* main sticky header */
@@ -362,20 +371,22 @@ div#preloader {
 		background-color: rgb(255, 255, 255);
 	}
 	.headerLogo {
-		width: 93px !important;
-		height: 50px;
+		/* width: 200px !important; */
+		height: 28px;
 		/* border: 1px solid; */
 	}
 	.top-sticky-header nav {
 		/* border: 1px solid black; */
-		box-shadow: 0px 0px 3px 0.2px;
+		box-shadow: 0px 0px 0.5px 0.1px;
 		/* display: none; */
 		position: fixed;
 		left: -150px;
 		transition: 0.8s;
 		/* background-color: rgba(156, 245, 168, 0.959); */
 		/* background-color: hsl(104, 46%, 62%) !important; */
-		background-color: hsla(197, 99%, 45%, 0.94) !important;
+		/* background-color: hsla(197, 99%, 45%, 0.94) !important; */
+		background-color: rgb(0, 113, 151) !important;
+
 		top: 0;
 		bottom: -200px;
 		width: 150px;
@@ -393,8 +404,8 @@ div#preloader {
 	}
 	.top-sticky-header nav ul li a:hover {
 		/* color: hsl(108, 100%, 18%) !important; */
-		color: rgb(0, 70, 94) !important;
-		font-weight: 600 !important;
+		color: rgb(101, 216, 255) !important;
+		font-weight: 500 !important;
 	}
 	.fa-bars, .fa-times-rectangle {
 		font-size: 23px;
@@ -409,19 +420,23 @@ div#preloader {
 		right: 20px;
 		top: 22.5px;
 		/* color: rgba(107, 167, 29, 0.678); */
-		color: hsla(197, 99%, 45%, 0.94) !important;
+		/* color: hsla(197, 99%, 45%, 0.94) !important; */
+		/* color: rgb(60, 91, 135) !important; */
+		color: rgb(0, 113, 151) !important;
 		display: block !important;
 		font-size: 24px;
 		cursor: pointer;
 	}
 	.fa-align-right:hover {
 		/* color: rgba(13, 122, 3, 0.877); */
-		color: rgb(0, 115, 153) !important;
+		/* color: rgb(0, 115, 153) !important; */
+		color: rgb(7, 38, 82) !important;
 	}
 	.fa-times-rectangle {
 		z-index: 200;
 		/* color: rgba(107, 167, 29, 0.678); */
-		color: hsla(197, 99%, 45%, 0.94) !important;
+		/* color: hsla(197, 99%, 45%, 0.94) !important; */
+		color: rgb(0, 113, 151) !important;
 		position: fixed;
 		right: 20px;
 		top: 22.5px;
@@ -430,7 +445,8 @@ div#preloader {
 	}
 	.fa-times-rectangle:hover {
 		/* color: rgba(13, 122, 3, 0.877); */
-		color: rgb(0, 115, 153) !important;
+		/* color: rgb(0, 115, 153) !important; */
+		color: rgb(7, 38, 82) !important;
 	}
 	/* main sticky header end*/
 	/* side social links fixed */
@@ -460,6 +476,7 @@ div#preloader {
 		right: 0 !important;
 	}
 	.alert-inner-text {
+		color: rgb(0, 0, 0);
 		text-align: justify;
 	}
 	/* end of submit box alert */
