@@ -238,6 +238,7 @@ div#preloader {
 	bottom: 20px;
 	right: 20px;
 	font-size: 24px;
+	display: none;
 }
 
 .go-top-svg {
