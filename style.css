@@ -297,6 +297,12 @@ div#preloader {
 	.top-sticky-header li {
 		margin: 0 20px;
 	}
+	/* swiper */
+	.swiper-container {
+		max-width: 92%;
+		height: 59%;
+	}
+	/* End of swiper */
 	.fa-align-right, .fa-times-rectangle {
 		display: none !important;
 	}
@@ -353,6 +359,49 @@ div#preloader {
 		padding-right: 50px;
 	}
 	/* End of footer section */
+	/* Home section Styling */
+	.home-center-heading {
+		z-index: 100;
+		position: absolute;
+		top: 40%;
+		left: 32%;
+		text-align: center;
+		font-weight: bolder;
+		line-height: 47.6759px;
+		font-size: 42px;
+	}
+	.heal-mind-heading {
+		left: 28%;
+	}
+	.affordable-service-heading {
+		left: 20%;
+	}
+	.book_now {
+		position: absolute;
+		top: 60%;
+		left: 42%;
+		color: rgba(247, 244, 244, 0.877);
+		background-color: blue;
+		z-index: 100;
+		padding: 15px 30px;
+		border-radius: 10px;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.book_now:hover {
+		text-decoration: none;
+		background-color: rgba(247, 244, 244, 0.877) !important;
+		padding: 13px 28px;
+		color: blue !important;
+		border: 2px solid blue;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+	}
+	/* End of home section styling */
 }
 
 /* TODO:  mobile media query */
@@ -375,6 +424,12 @@ div#preloader {
 		height: 28px;
 		/* border: 1px solid; */
 	}
+	/* swiper */
+	.swiper-container {
+		max-width: 85%;
+		/* height: 59%; */
+	}
+	/* End of swiper */
 	.top-sticky-header nav {
 		/* border: 1px solid black; */
 		box-shadow: 0px 0px 0.5px 0.1px;
@@ -386,7 +441,6 @@ div#preloader {
 		/* background-color: hsl(104, 46%, 62%) !important; */
 		/* background-color: hsla(197, 99%, 45%, 0.94) !important; */
 		background-color: rgb(0, 113, 151) !important;
-
 		top: 0;
 		bottom: -200px;
 		width: 150px;
@@ -458,7 +512,16 @@ div#preloader {
 		right: 0;
 		/* background-color: #fff; */
 	}
+	/* swipe container styling */
+	.swiper-container {
+		z-index: 0 !important;
+	}
+	.swiper-button-next, .swiper-button-prev {
+		display: none;
+	}
+	/* End of swipe container styling */
 	.phone, .whatsapp, .facebook, .youtube {
+		z-index: 20;
 		/* border: 2px solid; */
 		margin: 15px 0px 0px -1px;
 		cursor: pointer;
@@ -492,4 +555,51 @@ div#preloader {
 		margin-top: 10px;
 	}
 	/* end of footer section */
+	/* home section styling */
+	.mental-health-heading, .heal-mind-heading, .affordable-service-heading {
+		/* border: 1px solid black; */
+		font-size: 15px;
+		line-height: 20px;
+		left: 0;
+		top: 35%;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		z-index: 100;
+	}
+	.book_now {
+		font-size: 13px;
+		padding: 10px 15px;
+		/* left: 0; */
+		/* width: 100%; */
+		text-align: center;
+		position: relative;
+		color: rgba(247, 244, 244, 0.877);
+		background-color: blue;
+		z-index: 100;
+		border-radius: 10px;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.book_now:hover {
+		padding: 8px 13px;
+		text-decoration: none;
+		background-color: rgba(247, 244, 244, 0.877) !important;
+		color: blue !important;
+		border: 2px solid blue;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+	}
+	.book-now-container {
+		position: absolute;
+		/* border: 2px solid black !important; */
+		top: 60%;
+		width: 100%;
+		z-index: 100;
+		text-align: center;
+	}
+	/* End of home section styling */
 }

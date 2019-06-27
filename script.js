@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
 	});
 });
 
+
 // top sticky header nav-bar open-close setup
 
 var mobileScreenSize = window.matchMedia("(max-width: 781px)");
@@ -86,16 +87,6 @@ function checkMobileSize(size) {
 checkMobileSize(mobileScreenSize)
 mobileScreenSize.addListener(checkMobileSize)
 
-
-// smooth scrolling setup using jquery
-
-//Smooth Scrolling Using Navigation Menu
-$('a[href*="#"]').on('click', function (e) {
-	$('html,body').animate({
-		scrollTop: $($(this).attr('href')).offset().top - 80
-	}, 500);
-	e.preventDefault();
-});
 
 // close navbar when clicking on links
 $('a[href*="#"]').on('click', function () {
@@ -194,3 +185,48 @@ function scrollFunction() {
 		goTop.style.display = "none";
 	}
 }
+
+// /*------- Swiper Slider -------*/
+// var swiper = new Swiper('.swiper-container', {
+// 	pagination: '.swiper-pagination',
+// 	nextButton: '.swiper-button-next',
+// 	prevButton: '.swiper-button-prev',
+// 	paginationClickable: true,
+// 	centeredSlides: true,
+// 	autoplay: 3500,
+// 	   speed: 1500,
+// 	   loop: true,
+// 	autoplayDisableOnInteraction: false
+// });
+
+
+// <!-- Initialize Swiper -->
+
+var swiper = new Swiper('.swiper-container', {
+	spaceBetween: 0,
+	centeredSlides: true,
+	loop: true,
+	autoplay: {
+		delay: 4000,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+
+// smooth scrolling setup using jquery
+
+//Smooth Scrolling Using Navigation Menu
+$('a[href*="#"]').on('click', function (e) {
+	$('html,body').animate({
+		scrollTop: $($(this).attr('href')).offset().top - 80
+	}, 500);
+	e.preventDefault();
+});

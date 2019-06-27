@@ -40,6 +40,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<!-- swiper Css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
 
 	<!-- local css -->
 	<link rel="stylesheet" href="style.css">
@@ -69,11 +72,51 @@
 		<i class="fa fa-align-right"></i>
 		<i class="fa fa-times-rectangle"></i>
 
-
+		<!-- Home Section -->
 		<div id="home" style="height: 1000px">
-			<h2 style="text-align: center;">Home</h2>
+			<!-- <h2 style="text-align: center;">Home</h2> -->
+
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="position: relative;">
+						<h1 class="home-center-heading mental-health-heading">
+							Providing High Quality<br> Mental Health Care</h1>
+						<div class="book-now-container">
+							<a href="#contact" class="book_now">Book Now</a>
+						</div>
+						<img src="img/Slider_Images/hand.jpg" alt=""
+							style="max-width: 100%; height: auto; opacity: 0.75;">
+					</div>
+					<div class="swiper-slide">
+						<h1 class="home-center-heading heal-mind-heading">
+							Heal Your Mind and Soul <br> with Our Therapy Services</h1>
+						<div class="book-now-container">
+							<a href="#contact" class="book_now">Book Now</a>
+						</div>
+						<img src="img/Slider_Images/water.jpg" alt=""
+							style="max-width: 100%; height: auto; opacity: 0.75;">
+					</div>
+					<div class="swiper-slide">
+						<h1 class="home-center-heading affordable-service-heading">
+							Affordable Family Therapy Services<br> for Everyone</h1>
+						<div class="book-now-container">
+							<a href="#contact" class="book_now">Book Now</a>
+						</div>
+						<img src="img/Slider_Images/road.jpg" alt=""
+							style="max-width: 100%; height: auto; opacity: 0.75;">
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
 
 		</div>
+
+		<!-- End of home seciton -->
 
 		<div id="about" style="height: 1000px;">
 			<h2 style="text-align: center;">About Us</h2>
@@ -266,23 +309,27 @@
 					<ul style="list-style: none;">
 						<li class="therapy-link">
 							<img src="img/Therapies-svg-icons/senior.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;" alt="senior therapie">
+								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+								alt="senior therapie">
 							<a href="#" class="therapy-hyper-link">Therapy for Seniors</a>
 						</li>
 
 						<li class="therapy-link">
 							<img src="img/Therapies-svg-icons/couple.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;" alt="senior therapie">
+								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+								alt="senior therapie">
 							<a href="#" class="therapy-hyper-link">Therapy for Couples</a>
 						</li>
 						<li class="therapy-link">
 							<img src="img/Therapies-svg-icons/individual.png"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;" alt="senior therapie">
+								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+								alt="senior therapie">
 							<a href="#" class="therapy-hyper-link">Individual Therapy</a>
 						</li>
 						<li class="therapy-link">
 							<img src="img/Therapies-svg-icons/child.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;" alt="senior therapie">
+								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+								alt="senior therapie">
 							<a href="#" class="therapy-hyper-link">Therapy for Childrens</a>
 						</li>
 					</ul>
@@ -331,6 +378,10 @@
 
 	<!-- End of fixed social links right side -->
 
+	<!-- swiper  JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+
 
 	<!-- Google CDN Jquery & Ajax -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
@@ -339,7 +390,9 @@
 	<!-- BootStrap latest Js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+
 	<script src="script.js"></script>
+
 </body>
 
 </html>
