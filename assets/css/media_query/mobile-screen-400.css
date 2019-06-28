@@ -1,0 +1,24 @@
+/* mobile : 400px  media query*/
+
+@media screen and (max-width: 450px) {
+	.book-now-container {
+		bottom: 0 !important;
+		border: 1px solid;
+		padding: 0;
+		margin: 0;
+		height: 9px;
+	}
+	.book_now {
+		padding: 9px 9px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+	.mental-health-heading, .heal-mind-heading, .affordable-service-heading {
+		top: 30%;
+		font-size: 17px;
+		font-weight: bold;
+	}
+}
