@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
 	});
 });
 
+
 // top sticky header nav-bar open-close setup
 
 var mobileScreenSize = window.matchMedia("(max-width: 972px)");
