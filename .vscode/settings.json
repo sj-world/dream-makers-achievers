@@ -1,14 +1,10 @@
 {
 	"search.exclude": {
 		"# ignoe file name package.json": true,
-		"package.json": true,
-		"# ignoe file name index.html": true,
-		"index.html": true
+		"package.json": true
 	},
 	"files.exclude": {
 		"# ignoe file name package.json": true,
-		"package.json": true,
-		"# ignoe file name index.html": true,
-		"index.html": true
+		"package.json": true
 	}
 }
