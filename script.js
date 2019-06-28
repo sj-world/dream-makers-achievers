@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 
 // top sticky header nav-bar open-close setup
 
-var mobileScreenSize = window.matchMedia("(max-width: 781px)");
+var mobileScreenSize = window.matchMedia("(max-width: 972px)");
 var openBar = document.querySelector('.fa-align-right');
 var closeBar = document.querySelector('.fa-times-rectangle');
 var navContainer = document.querySelector('.top-sticky-header > nav');
