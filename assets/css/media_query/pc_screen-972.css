@@ -1,0 +1,134 @@
+/* TODO: PC media query */
+
+@media screen and (min-width: 973px) {
+	/* preloader */
+	div#preloader img {
+		width: 160px;
+		height: 25%;
+	}
+	/* preloader end */
+	.headerLogo {
+		/* width: 200px !important; */
+		height: 33px;
+		/* border: 1px solid; */
+	}
+	/* main sticky header */
+	.top-sticky-header {
+		height: 70px;
+		/* max-height: 100%; */
+		padding: 0 75px;
+	}
+	.top-sticky-header nav ul {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.top-sticky-header li {
+		margin: 0 20px;
+	}
+	/* swiper */
+	.swiper-container {
+		max-width: 92%;
+		height: 59%;
+	}
+	/* End of swiper */
+	.fa-align-right, .fa-times-rectangle {
+		display: none !important;
+	}
+	/* main sticky header end*/
+	/* side social links fixed */
+	.socialLinks-container {
+		z-index: 50;
+		/* border: 1px solid rgba(43, 39, 39, 0.349); */
+		padding: 5px 0px 5px 0;
+		position: fixed;
+		min-width: 35px;
+		top: 35%;
+		right: 0;
+		/* background-color: #fff; */
+	}
+	.phone, .whatsapp, .facebook, .youtube {
+		/* border: 2px solid; */
+		width: 25px;
+		display: block;
+		margin: 12px 0;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.whatsapp {
+		width: 28px;
+	}
+	.whatsapp:hover {
+		width: 35px;
+	}
+	.phone:hover, .facebook:hover, .youtube:hover {
+		width: 32px;
+		transition: 0.3s;
+	}
+	/* side social links end */
+	.submit-box-alert {
+		/* border: 2px solid black; */
+		left: 0 !important;
+		right: 0 !important;
+		height: 11%;
+	}
+	.alert-inner-text {
+		color: rgb(0, 0, 0) !important;
+		/* border: 2px solid; */
+		/* height: 100%; */
+		margin-top: 10px;
+		text-align: center;
+	}
+	/* footer section */
+	.google-map {
+		/* border: 5px solid blue; */
+		max-width: 92%;
+	}
+	.contact-info-container, .quick-link-container {
+		padding-right: 50px;
+	}
+	/* End of footer section */
+	/* Home section Styling */
+	.home-center-heading {
+		z-index: 100;
+		position: absolute;
+		top: 40%;
+		left: 32%;
+		text-align: center;
+		font-weight: bolder;
+		line-height: 47.6759px;
+		font-size: 42px;
+	}
+	.heal-mind-heading {
+		left: 28%;
+	}
+	.affordable-service-heading {
+		left: 20%;
+	}
+	.book_now {
+		position: absolute;
+		top: 60%;
+		left: 42%;
+		color: rgba(247, 244, 244, 0.877);
+		background-color: blue;
+		z-index: 100;
+		padding: 15px 30px;
+		border-radius: 10px;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.book_now:hover {
+		text-decoration: none;
+		background-color: rgba(247, 244, 244, 0.877) !important;
+		padding: 13px 28px;
+		color: blue !important;
+		border: 2px solid blue;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+	}
+	/* End of home section styling */
+}
