@@ -1,6 +1,5 @@
-/* mobile : 400px  media query*/
-
 @media screen and (max-width: 450px) {
+	/* REVIEW: Home Section */
 	.book-now-container {
 		bottom: 0 !important;
 		border: 1px solid;
