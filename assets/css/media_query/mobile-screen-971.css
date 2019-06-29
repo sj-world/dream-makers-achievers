@@ -166,4 +166,10 @@
 	.contact-info-container, .quick-link-container, .therapie-container {
 		margin-top: 10px;
 	}
+	/* REVIEW: About Section */
+	.about-section {
+		width: 85%;
+		margin: 0 auto;
+		margin-bottom: 50px !important;
+	}
 }

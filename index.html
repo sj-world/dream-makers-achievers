@@ -44,6 +44,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
 
+	<!-- video framework css -->
+	<link rel="stylesheet" href="video_framework/css/ckin.min.css">
+
+
 	<!-- local css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media_query/pc_screen-972.css">
@@ -127,8 +131,28 @@
 
 		<!-- End of home seciton -->
 
-		<div id="about">
-			<h2 style="text-align: center;">About Us</h2>
+		<div id="about" class="about-section">
+			<!-- <h2 style="text-align: center;">About Us</h2> -->
+			<div class="videoContainer">
+				<video poster="video_framework/ckin.jpg" src="video_framework/ckin.mp4" data-title="Little Video"
+					data-color="rgb(42, 114, 202)"></video>
+			</div>
+			<div class="about-content-container">
+				<h1 style="font-size: 32px; font-weight: 900; line-height: 38.66px; text-align: left;">Who We Are</h1>
+				<p style="font-size: 19px;">Dream Makers & Achivers is a
+					centrally located in India-based psychology
+					practice
+					providing therapeutic and counselling services. Our psychologists are highly trained and well
+					qualified to provide highly effective therapy.
+				</p>
+				<p style="text-align: left; margin-bottom: 25px;">Our clinic offers a range of psychological services
+					and treatments to children, adolescents and adults in our community. We provide high-quality
+					evidence-based comprehensive psychological assessments and psychotherapies. From time to time we
+					offer group therapy programs to children and parents as well as corporate representatives.
+				</p>
+				<a href="#contact" class="about-contact-link">CONTACT US</a>
+			</div>
+
 		</div>
 
 		<div id="services">
@@ -386,6 +410,9 @@
 	</a>
 
 	<!-- End of fixed social links right side -->
+
+	<!-- video framework js -->
+	<script src="video_framework/js/ckin.min.js"></script>
 
 	<!-- swiper  JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>

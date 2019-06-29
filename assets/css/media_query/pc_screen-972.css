@@ -70,7 +70,7 @@
 	/* REVIEW: Home Section */
 	.swiper-container {
 		max-width: 92%;
-		height: 600px !important;
+		height: 590px !important;
 	}
 	.swipe-heading-container {
 		position: absolute;
@@ -122,5 +122,21 @@
 		-moz-transition: 0.3s;
 		-ms-transition: 0.3s;
 		-o-transition: 0.3s;
+	}
+	/* REVIEW: About Section */
+	.about-section {
+		width: 92%;
+		margin: 0 auto;
+		margin-bottom: 50px !important;
+		height: 420px;
+	}
+	.videoContainer {
+		display: inline-block;
+		width: 50%;
+	}
+	.about-content-container {
+		width: 45%;
+		float: right;
+		margin-left: 5%;
 	}
 }
