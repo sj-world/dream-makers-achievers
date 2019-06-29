@@ -1,4 +1,4 @@
-// preloader when loading page
+// REVIEW: preloader when loading page
 jQuery(document).ready(function ($) {
 	$(window).load(function () {
 		$('#preloader').fadeOut('slow', function () { $(this).remove(); });
@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-// top sticky header nav-bar open-close setup
+// REVIEW: top sticky header nav-bar open-close setup
 
 var mobileScreenSize = window.matchMedia("(max-width: 972px)");
 var openBar = document.querySelector('.fa-align-right');
@@ -64,9 +64,11 @@ function toggleNavBar() {
 }
 
 
+// REVIEW: Close nav, When Clicked Outside Of It.
+
 $(document.body).mousedown(function (event) {
 	var target = $(event.target);
-	if (target.parents().andSelf().is(openBar) || target.parents().andSelf().is(navContainer)) { // Clicked outside
+	if (target.parents().andSelf().is(openBar) || target.parents().andSelf().is(navContainer)) {
 		navContainer.style.left = "0px";
 	} else {
 		navContainer.style.left = "-150px";
@@ -88,7 +90,7 @@ checkMobileSize(mobileScreenSize)
 mobileScreenSize.addListener(checkMobileSize)
 
 
-// close navbar when clicking on links
+// REVIEW: close navbar when clicking on links
 $('a[href*="#"]').on('click', function () {
 	document.body.style.overflowY = "scroll";
 	document.querySelector('nav').style.left = "-150px";
@@ -107,7 +109,7 @@ $('a[href*="#"]').on('click', function () {
 });
 
 
-// open facebook page when clicking on fb icon
+// REVIEW: open facebook page when clicking on fb icon
 
 document.querySelector('.facebook').addEventListener('click', function () {
 
@@ -122,7 +124,7 @@ document.querySelector('.facebook').addEventListener('click', function () {
 
 });
 
-// Form submission using ajax 
+// REVIEW: Form submission using ajax 
 
 function postToDataBase() {
 
@@ -152,7 +154,7 @@ function postToDataBase() {
 var form = document.querySelector('#form');
 form.addEventListener("submit", function (e) {
 
-	e.preventDefault();    //stop form from submitting
+	e.preventDefault();    //stop form from submitting default
 	e.target.firstName.value = '';
 	e.target.lastName.value = '';
 	e.target.phone.value = '';
@@ -160,7 +162,7 @@ form.addEventListener("submit", function (e) {
 	e.target.message.value = '';
 	e.target.email.value = '';
 
-	// alert box after form submission
+	// alert box after form submission 
 	document.querySelector('.submit-box-alert').style.display = "block";
 	setInterval(() => {
 		document.querySelector('.submit-box-alert').style.display = "none";
@@ -168,7 +170,7 @@ form.addEventListener("submit", function (e) {
 	postToDataBase();
 });
 
-// back to top icon
+// REVIEW: back to top icon
 
 window.onscroll = function () { scrollFunction() };
 
@@ -220,10 +222,7 @@ var swiper = new Swiper('.swiper-container', {
 	},
 });
 
-
-// smooth scrolling setup using jquery
-
-//Smooth Scrolling Using Navigation Menu
+// REVIEW: smooth scrolling setup using jquery, when clicking on links
 $('a[href*="#"]').on('click', function (e) {
 	$('html,body').animate({
 		scrollTop: $($(this).attr('href')).offset().top - 80
