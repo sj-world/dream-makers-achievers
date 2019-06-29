@@ -1,12 +1,12 @@
-/* TODO:  mobile media query */
-
 @media screen and (max-width: 972px) {
+	/* REVIEW: Preloader */
 	/* preloader */
 	div#preloader img {
 		width: 100px;
 		height: 18%;
 	}
 	/* preloader  */
+	/* REVIEW:  sticky header styling */
 	/* main sticky header */
 	.top-sticky-header {
 		height: 70px;
@@ -18,12 +18,6 @@
 		height: 28px;
 		/* border: 1px solid; */
 	}
-	/* swiper */
-	.swiper-container {
-		max-width: 85%;
-		/* height: 59%; */
-	}
-	/* End of swiper */
 	.top-sticky-header nav {
 		/* border: 1px solid black; */
 		box-shadow: 0px 0px 0.5px 0.1px;
@@ -97,15 +91,7 @@
 		color: rgb(7, 38, 82) !important;
 	}
 	/* main sticky header end*/
-	/* side social links fixed */
-	.socialLinks-container {
-		padding: 5px 0px 5px 0;
-		width: 25px;
-		position: fixed;
-		top: 200px;
-		right: 0;
-		/* background-color: #fff; */
-	}
+	/* REVIEW: Home Section Styling */
 	/* swipe container styling */
 	.swiper-container {
 		z-index: 0 !important;
@@ -113,43 +99,10 @@
 	.swiper-button-next, .swiper-button-prev {
 		display: none;
 	}
-	/* End of swipe container styling */
-	.phone, .whatsapp, .facebook, .youtube {
-		z-index: 20;
-		/* border: 2px solid; */
-		margin: 15px 0px 0px -1px;
-		cursor: pointer;
-		width: 20px;
+	.swiper-container {
+		max-width: 85%;
+		/* height: 59%; */
 	}
-	.whatsapp {
-		width: 30px;
-		padding-right: 6px;
-	}
-	/* side social links end */
-	/* submit box alert styling */
-	.submit-box-alert {
-		/* border: 2px solid black; */
-		left: 0 !important;
-		right: 0 !important;
-	}
-	.alert-inner-text {
-		color: rgb(0, 0, 0);
-		text-align: justify;
-	}
-	/* end of submit box alert */
-	/* footer section */
-	.google-map {
-		/* border: 5px solid blue; */
-		max-width: 92%;
-	}
-	.info-container {
-		flex-direction: column;
-	}
-	.contact-info-container, .quick-link-container, .therapie-container {
-		margin-top: 10px;
-	}
-	/* end of footer section */
-	/* home section styling */
 	.mental-health-heading, .heal-mind-heading, .affordable-service-heading {
 		/* border: 1px solid black; */
 		font-size: 15px;
@@ -195,5 +148,52 @@
 		z-index: 100;
 		text-align: center;
 	}
-	/* End of home section styling */
+	/* End of swipe container styling */
+	/* REVIEW: Fixed Social Icons */
+	/* side social links fixed */
+	.socialLinks-container {
+		padding: 5px 0px 5px 0;
+		width: 25px;
+		position: fixed;
+		top: 200px;
+		right: 0;
+		/* background-color: #fff; */
+	}
+	.phone, .whatsapp, .facebook, .youtube {
+		z-index: 20;
+		/* border: 2px solid; */
+		margin: 15px 0px 0px -1px;
+		cursor: pointer;
+		width: 20px;
+	}
+	.whatsapp {
+		width: 30px;
+		padding-right: 6px;
+	}
+	/* side social links end */
+	/* REVIEW: Submit Box Styling */
+	/* submit box alert styling */
+	.submit-box-alert {
+		/* border: 2px solid black; */
+		left: 0 !important;
+		right: 0 !important;
+	}
+	.alert-inner-text {
+		color: rgb(0, 0, 0);
+		text-align: justify;
+	}
+	/* end of submit box alert */
+	/* REVIEW: Footer Section Styling */
+	/* footer section */
+	.google-map {
+		/* border: 5px solid blue; */
+		max-width: 92%;
+	}
+	.info-container {
+		flex-direction: column;
+	}
+	.contact-info-container, .quick-link-container, .therapie-container {
+		margin-top: 10px;
+	}
+	/* end of footer section */
 }
