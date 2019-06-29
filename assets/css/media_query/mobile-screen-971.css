@@ -78,32 +78,48 @@
 	.swiper-container {
 		max-width: 85%;
 	}
-	.mental-health-heading, .heal-mind-heading, .affordable-service-heading {
-		font-size: 15px;
-		line-height: 20px;
-		left: 0;
-		top: 35%;
-		width: 100%;
-		text-align: center;
+	.swipe-heading-container {
 		position: absolute;
 		z-index: 100;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: rgba(3, 1, 17, 0.205);
+	}
+	.home-center-heading {
+		text-align: center;
+		align-self: center;
+		z-index: 100;
+		font-weight: bolder;
+		font-size: 22px;
+		color: white;
+	}
+	.book-now-container {
+		z-index: 100;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
 	}
 	.book_now {
-		font-size: 13px;
-		padding: 10px 15px;
-		text-align: center;
-		position: relative;
+		margin-top: 150px;
+		align-self: center;
 		color: rgba(247, 244, 244, 0.877);
 		background-color: blue;
 		z-index: 100;
+		padding: 15px 30px;
 		border-radius: 10px;
 		text-decoration: none;
+		font-size: 14px;
 		font-weight: 600;
 	}
 	.book_now:hover {
-		padding: 8px 13px;
 		text-decoration: none;
 		background-color: rgba(247, 244, 244, 0.877) !important;
+		padding: 13px 28px;
 		color: blue !important;
 		border: 2px solid blue;
 		transition: 0.3s;
@@ -111,13 +127,6 @@
 		-moz-transition: 0.3s;
 		-ms-transition: 0.3s;
 		-o-transition: 0.3s;
-	}
-	.book-now-container {
-		position: absolute;
-		top: 60%;
-		width: 100%;
-		z-index: 100;
-		text-align: center;
 	}
 	/* REVIEW: Fixed Social Icons */
 	.socialLinks-container {

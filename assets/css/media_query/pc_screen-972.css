@@ -70,28 +70,38 @@
 	/* REVIEW: Home Section */
 	.swiper-container {
 		max-width: 92%;
-		height: 59%;
+		height: 600px !important;
+	}
+	.swipe-heading-container {
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: rgba(3, 1, 17, 0.288);
 	}
 	.home-center-heading {
-		z-index: 100;
-		position: absolute;
-		top: 40%;
-		left: 32%;
 		text-align: center;
+		align-self: center;
+		z-index: 100;
 		font-weight: bolder;
 		line-height: 47.6759px;
 		font-size: 42px;
+		color: white;
 	}
-	.heal-mind-heading {
-		left: 28%;
-	}
-	.affordable-service-heading {
-		left: 20%;
+	.book-now-container {
+		z-index: 100;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
 	}
 	.book_now {
-		position: absolute;
-		top: 60%;
-		left: 42%;
+		margin-top: 200px;
+		align-self: center;
 		color: rgba(247, 244, 244, 0.877);
 		background-color: blue;
 		z-index: 100;

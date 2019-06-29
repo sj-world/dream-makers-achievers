@@ -63,7 +63,6 @@ function toggleNavBar() {
 	});
 }
 
-
 // REVIEW: Close nav, When Clicked Outside Of It.
 
 $(document.body).mousedown(function (event) {
@@ -188,6 +187,14 @@ function scrollFunction() {
 	}
 }
 
+// REVIEW: smooth scrolling setup using jquery, when clicking on links
+$('a[href*="#"]').on('click', function (e) {
+	$('html,body').animate({
+		scrollTop: $($(this).attr('href')).offset().top - 80
+	}, 500);
+	e.preventDefault();
+});
+
 // /*------- Swiper Slider -------*/
 // var swiper = new Swiper('.swiper-container', {
 // 	pagination: '.swiper-pagination',
@@ -202,12 +209,12 @@ function scrollFunction() {
 // });
 
 
-// <!-- Initialize Swiper -->
+// <!--REVIEW:  Initialize Swiper -->
 
 var swiper = new Swiper('.swiper-container', {
 	spaceBetween: 0,
 	centeredSlides: true,
-	loop: true,
+	loop: false,
 	autoplay: {
 		delay: 4000,
 		disableOnInteraction: false,
@@ -220,12 +227,4 @@ var swiper = new Swiper('.swiper-container', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-});
-
-// REVIEW: smooth scrolling setup using jquery, when clicking on links
-$('a[href*="#"]').on('click', function (e) {
-	$('html,body').animate({
-		scrollTop: $($(this).attr('href')).offset().top - 80
-	}, 500);
-	e.preventDefault();
 });
