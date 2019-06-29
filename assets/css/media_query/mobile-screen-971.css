@@ -11,20 +11,13 @@
 		background-color: rgb(255, 255, 255);
 	}
 	.headerLogo {
-		/* width: 200px !important; */
 		height: 28px;
-		/* border: 1px solid; */
 	}
 	.top-sticky-header nav {
-		/* border: 1px solid black; */
 		box-shadow: 0px 0px 0.5px 0.1px;
-		/* display: none; */
 		position: fixed;
 		left: -150px;
 		transition: 0.8s;
-		/* background-color: rgba(156, 245, 168, 0.959); */
-		/* background-color: hsl(104, 46%, 62%) !important; */
-		/* background-color: hsla(197, 99%, 45%, 0.94) !important; */
 		background-color: rgb(0, 113, 151) !important;
 		top: 0;
 		bottom: -200px;
@@ -38,18 +31,15 @@
 	.top-sticky-header nav ul li a {
 		font-size: 13px;
 		color: hsl(0, 0%, 100%) !important;
-		/* color: hsl(133, 100%, 13%) !important; */
 		font-weight: 500 !important;
 	}
 	.top-sticky-header nav ul li a:hover {
-		/* color: hsl(108, 100%, 18%) !important; */
 		color: rgb(101, 216, 255) !important;
 		font-weight: 500 !important;
 	}
 	.fa-bars, .fa-times-rectangle {
 		font-size: 23px;
 		cursor: pointer;
-		/* transition: 5s; */
 	}
 	.fa-align-right {
 		position: fixed;
@@ -58,23 +48,16 @@
 		display: block;
 		right: 20px;
 		top: 22.5px;
-		/* color: rgba(107, 167, 29, 0.678); */
-		/* color: hsla(197, 99%, 45%, 0.94) !important; */
-		/* color: rgb(60, 91, 135) !important; */
 		color: rgb(0, 113, 151) !important;
 		display: block !important;
 		font-size: 24px;
 		cursor: pointer;
 	}
 	.fa-align-right:hover {
-		/* color: rgba(13, 122, 3, 0.877); */
-		/* color: rgb(0, 115, 153) !important; */
 		color: rgb(7, 38, 82) !important;
 	}
 	.fa-times-rectangle {
 		z-index: 200;
-		/* color: rgba(107, 167, 29, 0.678); */
-		/* color: hsla(197, 99%, 45%, 0.94) !important; */
 		color: rgb(0, 113, 151) !important;
 		position: fixed;
 		right: 20px;
@@ -83,8 +66,6 @@
 		font-size: 26px;
 	}
 	.fa-times-rectangle:hover {
-		/* color: rgba(13, 122, 3, 0.877); */
-		/* color: rgb(0, 115, 153) !important; */
 		color: rgb(7, 38, 82) !important;
 	}
 	/* REVIEW: Home Section Styling */
@@ -96,10 +77,8 @@
 	}
 	.swiper-container {
 		max-width: 85%;
-		/* height: 59%; */
 	}
 	.mental-health-heading, .heal-mind-heading, .affordable-service-heading {
-		/* border: 1px solid black; */
 		font-size: 15px;
 		line-height: 20px;
 		left: 0;
@@ -112,8 +91,6 @@
 	.book_now {
 		font-size: 13px;
 		padding: 10px 15px;
-		/* left: 0; */
-		/* width: 100%; */
 		text-align: center;
 		position: relative;
 		color: rgba(247, 244, 244, 0.877);
@@ -137,7 +114,6 @@
 	}
 	.book-now-container {
 		position: absolute;
-		/* border: 2px solid black !important; */
 		top: 60%;
 		width: 100%;
 		z-index: 100;
@@ -150,7 +126,6 @@
 		position: fixed;
 		top: 200px;
 		right: 0;
-		/* background-color: #fff; */
 	}
 	.phone, .whatsapp, .facebook, .youtube {
 		z-index: 20;
@@ -165,7 +140,6 @@
 	}
 	/* REVIEW: Submit Box Styling */
 	.submit-box-alert {
-		/* border: 2px solid black; */
 		left: 0 !important;
 		right: 0 !important;
 	}
@@ -175,7 +149,6 @@
 	}
 	/* REVIEW: Footer Section Styling */
 	.google-map {
-		/* border: 5px solid blue; */
 		max-width: 92%;
 	}
 	.info-container {
