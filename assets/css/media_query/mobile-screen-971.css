@@ -1,13 +1,10 @@
 @media screen and (max-width: 972px) {
 	/* REVIEW: Preloader */
-	/* preloader */
 	div#preloader img {
 		width: 100px;
 		height: 18%;
 	}
-	/* preloader  */
 	/* REVIEW:  sticky header styling */
-	/* main sticky header */
 	.top-sticky-header {
 		height: 70px;
 		padding: 0 20px;
@@ -90,9 +87,7 @@
 		/* color: rgb(0, 115, 153) !important; */
 		color: rgb(7, 38, 82) !important;
 	}
-	/* main sticky header end*/
 	/* REVIEW: Home Section Styling */
-	/* swipe container styling */
 	.swiper-container {
 		z-index: 0 !important;
 	}
@@ -148,9 +143,7 @@
 		z-index: 100;
 		text-align: center;
 	}
-	/* End of swipe container styling */
 	/* REVIEW: Fixed Social Icons */
-	/* side social links fixed */
 	.socialLinks-container {
 		padding: 5px 0px 5px 0;
 		width: 25px;
@@ -170,9 +163,7 @@
 		width: 30px;
 		padding-right: 6px;
 	}
-	/* side social links end */
 	/* REVIEW: Submit Box Styling */
-	/* submit box alert styling */
 	.submit-box-alert {
 		/* border: 2px solid black; */
 		left: 0 !important;
@@ -182,9 +173,7 @@
 		color: rgb(0, 0, 0);
 		text-align: justify;
 	}
-	/* end of submit box alert */
 	/* REVIEW: Footer Section Styling */
-	/* footer section */
 	.google-map {
 		/* border: 5px solid blue; */
 		max-width: 92%;
@@ -195,5 +184,4 @@
 	.contact-info-container, .quick-link-container, .therapie-container {
 		margin-top: 10px;
 	}
-	/* end of footer section */
 }
