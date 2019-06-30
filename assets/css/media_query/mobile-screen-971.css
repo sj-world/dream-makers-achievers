@@ -240,4 +240,12 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	/* REVIEW: Team Section */
+	.team-container {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.team-member {
+		margin-bottom: 50px;
+	}
 }
