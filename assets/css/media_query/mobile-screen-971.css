@@ -240,6 +240,9 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.service-heading {
+		margin-top: 25px;
+	}
 	/* REVIEW: Team Section */
 	.team-container {
 		width: 85%;
@@ -247,5 +250,24 @@
 	}
 	.team-member {
 		margin-bottom: 50px;
+	}
+	.team-heading {
+		padding-bottom: 25px;
+	}
+	/* REVIEW: Gallery Section */
+	.gallery-container {
+		width: 85%;
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+	.gallery-heading {
+		margin-bottom: 25px;
+	}
+	/* REVIEW: Contact Section */
+	.fillForm {
+		display: none;
+	}
+	.contact-heading {
+		margin-bottom: 25px;
 	}
 }

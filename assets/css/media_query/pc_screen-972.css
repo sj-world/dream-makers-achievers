@@ -235,4 +235,13 @@
 	.team-member {
 		width: 30%;
 	}
+	/* REVIEW: Gallery Section */
+	.gallery-container {
+		width: 91%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.gallery-heading {
+		margin-bottom: 50px;
+	}
 }
