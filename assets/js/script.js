@@ -1,9 +1,9 @@
 // REVIEW: preloader when loading page
-jQuery(document).ready(function ($) {
-	$(window).load(function () {
-		$('#preloader').fadeOut('slow', function () { $(this).remove(); });
-	});
-});
+// jQuery(document).ready(function ($) {
+// 	$(window).load(function () {
+// 		$('#preloader').fadeOut('slow', function () { $(this).remove(); });
+// 	});
+// });
 
 
 // REVIEW: top sticky header nav-bar open-close setup
