@@ -139,4 +139,39 @@
 		float: right;
 		margin-left: 5%;
 	}
+	.about-counselling-container {
+		width: 91%;
+	}
+	.counselling1 {
+		margin-right: 5%;
+		display: flex;
+	}
+	.counselling2 {
+		margin-right: 5%;
+		display: flex;
+	}
+	.counselling3 {
+		display: flex;
+	}
+	.about-counselling {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.counselling-left-icon {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+	.counselling-right-content {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+	.about-counselling-icon {
+		padding: 30px 30px;
+		color: white;
+		font-size: 30px;
+	}
+	.about-section {
+		padding-top: 50px;
+		padding-bottom: 435px;
+	}
 }
