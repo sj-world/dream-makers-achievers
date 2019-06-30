@@ -174,4 +174,53 @@
 		padding-top: 50px;
 		padding-bottom: 435px;
 	}
+	/* REVIEW: Service Section */
+	.service-container {
+		width: 91%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 80px;
+		margin-bottom: 0px;
+	}
+	.service-left-content {
+		flex: 1;
+		padding: 4% 5% 0 0;
+	}
+	.service-right-image {
+		flex: 1;
+	}
+	.our-service-heading-para {
+		width: 50%;
+	}
+	.service-cards {
+		display: flex;
+		flex-wrap: wrap;
+		width: 91%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+	.service-card {
+		width: 30%;
+		margin-bottom: 2%;
+	}
+	.our-services {
+		margin-top: 140px !important;
+		padding-top: 50px;
+	}
+	.our-services>h2 {
+		margin-bottom: 5px;
+	}
+	.our-services>p {
+		padding-bottom: 20px;
+		/* border: 1px solid !important; */
+	}
+	.service-cards {
+		padding-bottom: 50px;
+	}
+	.service-card>p {
+		/* border: 1px solid; */
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
