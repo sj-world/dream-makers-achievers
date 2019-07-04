@@ -18,7 +18,7 @@ body {
 
 /* REVIEW: Preloader */
 
-div#preloader {
+/* div#preloader {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -30,7 +30,7 @@ div#preloader {
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(255, 255, 255);
-}
+} */
 
 /* REVIEW: Top Sticky Header */
 
