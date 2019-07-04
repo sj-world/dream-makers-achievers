@@ -145,6 +145,7 @@ function postToDataBase() {
 		success: function () {
 			console.log('your message has been sent ..!')
 		},
+
 		error: function () {
 			console.log('problem with server ..!')
 		}
