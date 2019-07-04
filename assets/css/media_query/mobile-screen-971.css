@@ -219,7 +219,10 @@
 		margin: 0 auto
 	}
 	.service-card {
-		margin-bottom: 8%;
+		margin-bottom: 40px;
+	}
+	.service-card:nth-child(1) {
+		margin-top: 15px;
 	}
 	.our-services {
 		margin-top: 50px;

@@ -55,12 +55,4 @@
 		-o-transition: 0.3s;
 	}
 	/* REVIEW: Gallery Section */
-	.swiper-slide-gallery {
-		height: 250px !important;
-	}
-	.swiper-container-gallery {
-		width: 100% !important;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
 }
