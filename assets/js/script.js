@@ -136,8 +136,10 @@ function postToDataBase() {
 
 
 	$.ajax({
-		url: "https://docs.google.com/forms/d/e/1FAIpQLSfMsN2x1EYKc8eWifLXKstkLmox-kQMZ6mwxIjKigW9DW0cJA/formResponse?",
-		data: { "entry.621512744": field1, "entry.1706967562": field2, "entry.2049005945": field3, "entry.82353163": field4, "entry.970242008": field5, "emailAddress": field6 },
+		// url: "https://docs.google.com/forms/d/e/1FAIpQLSfMsN2x1EYKc8eWifLXKstkLmox-kQMZ6mwxIjKigW9DW0cJA/formResponse?",
+		url: "https://docs.google.com/forms/d/e/1FAIpQLSd-nZTMqUuZrDHSMQimw4j60gRhFexV5dYIDJVpRP0tkO6_Gg/formResponse?",
+		// data: { "entry.621512744": field1, "entry.1706967562": field2, "entry.2049005945": field3, "entry.82353163": field4, "entry.970242008": field5, "emailAddress": field6 },
+		data: { "entry.429837114": field1, "entry.1559166694": field2, "entry.1714383696": field3, "entry.1326074996": field4, "entry.964461964": field5, "emailAddress": field6 },
 		type: "POST",
 		dataType: "xml",
 		success: function () {
