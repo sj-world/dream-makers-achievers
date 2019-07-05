@@ -166,7 +166,7 @@ form.addEventListener("submit", function (e) {
 
 	// alert box after form submission 
 	document.querySelector('.submit-box-alert').style.display = "block";
-	setInterval(() => {
+	setTimeout(() => {
 		document.querySelector('.submit-box-alert').style.display = "none";
 	}, 7000);
 	postToDataBase();
