@@ -114,7 +114,7 @@ document.querySelector('.facebook').addEventListener('click', function () {
 
 	setTimeout(() => {
 		const a = document.createElement('a');
-		a.href = "https://www.facebook.com/whatsapp8090920577/";
+		a.href = "https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/";
 		a.target = '_blank';
 		document.body.appendChild(a);
 		a.click();
