@@ -500,14 +500,19 @@
 							name="lastName" required />
 					</div>
 					<div class="form-group">
+						<label for="email">Email: <span class="asterisk" style="color: darkgreen;">*</span></label>
+						<input type="email" name="email" class="form-control" id="email" placeholder="Enter Email"
+							required>
+					</div>
+					<div class="form-group">
 						<label for="mobile">Phone No: <span class="asterisk" style="color: darkgreen;">*</span></label>
 						<input type="tel" maxlength="14" class="form-control" id="mobile"
 							placeholder="Ex. +91 0123456789" name="phone" required />
 					</div>
 					<div class="form-group">
-						<label for="email">Email: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<input type="email" name="email" class="form-control" id="email" placeholder="Enter Email"
-							required>
+						<label for="address">Address: <span class="asterisk" style="color: darkgreen;">*</span></label>
+						<input type="text" class="form-control" id="address" placeholder="Your Address" name="address"
+							required />
 					</div>
 					<div class="form-group">
 						<label for="subject">Subject: <span class="asterisk" style="color: darkgreen;">*</span></label>
@@ -516,8 +521,8 @@
 					</div>
 					<div class="form-group">
 						<label for="message">Message: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<textarea name="message" class="form-control" id="message" cols="30" rows="10"
-							placeholder="Describe here ..!" required></textarea>
+						<textarea name="message" minlength="100" class="form-control" id="message" cols="30" rows="10"
+							placeholder="Describe here ..!  (minimum 100 words)" required></textarea>
 					</div>
 					<button type="submit" class="btn btn-primary form-submit-btn" id="sbmt">
 						Submit Now

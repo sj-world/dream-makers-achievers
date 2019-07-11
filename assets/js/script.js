@@ -133,13 +133,14 @@ function postToDataBase() {
 	var field4 = $("#subject").val();
 	var field5 = $("#message").val();
 	var field6 = $("#email").val();
+	var field7 = $("#address").val();
 
 
 	$.ajax({
-		// url: "https://docs.google.com/forms/d/e/1FAIpQLSfMsN2x1EYKc8eWifLXKstkLmox-kQMZ6mwxIjKigW9DW0cJA/formResponse?",
-		url: "https://docs.google.com/forms/d/e/1FAIpQLSd-nZTMqUuZrDHSMQimw4j60gRhFexV5dYIDJVpRP0tkO6_Gg/formResponse?",
-		// data: { "entry.621512744": field1, "entry.1706967562": field2, "entry.2049005945": field3, "entry.82353163": field4, "entry.970242008": field5, "emailAddress": field6 },
-		data: { "entry.429837114": field1, "entry.1559166694": field2, "entry.1714383696": field3, "entry.1326074996": field4, "entry.964461964": field5, "emailAddress": field6 },
+
+		url: "https://docs.google.com/forms/d/e/1FAIpQLSd60r5wh_-4DRSxgp4g9_kMyitffQmkmXAhyKbKLVFjKIS6nQ/formResponse?",
+
+		data: { "entry.1062285405": field1, "entry.1115814915": field2, "entry.305354010": field3, "entry.2137892250": field4, "entry.334434444": field5, "emailAddress": field6, "entry.220273468": field7 },
 		type: "POST",
 		dataType: "xml",
 		success: function () {
@@ -163,6 +164,7 @@ form.addEventListener("submit", function (e) {
 	e.target.subject.value = '';
 	e.target.message.value = '';
 	e.target.email.value = '';
+	e.target.address.value = '';
 
 	// alert box after form submission 
 	document.querySelector('.submit-box-alert').style.display = "block";
