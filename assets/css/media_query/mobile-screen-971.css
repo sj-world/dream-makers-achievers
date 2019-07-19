@@ -167,6 +167,16 @@
 		margin-top: 10px;
 	}
 	/* REVIEW: About Section */
+	.about-section-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.videoContainer {
+		margin-top: 50px;
+		order: 2;
+	}
+
 	.about-section {
 		width: 85%;
 		margin: 0 auto;
