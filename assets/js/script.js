@@ -9,6 +9,7 @@
 // REVIEW: top sticky header nav-bar open-close setup
 
 var mobileScreenSize = window.matchMedia("(max-width: 972px)");
+var pcScreenSize = window.matchMedia("(min-width: 973px)");
 var openBar = document.querySelector('.fa-align-right');
 var closeBar = document.querySelector('.fa-times-rectangle');
 var navContainer = document.querySelector('.top-sticky-header > nav');
@@ -85,8 +86,6 @@ function checkMobileSize(size) {
 	}
 }
 
-checkMobileSize(mobileScreenSize)
-mobileScreenSize.addListener(checkMobileSize)
 
 
 // REVIEW: close navbar when clicking on links
@@ -110,18 +109,18 @@ $('a[href*="#"]').on('click', function () {
 
 // REVIEW: open facebook page when clicking on fb icon
 
-document.querySelector('.facebook').addEventListener('click', function () {
 
-	setTimeout(() => {
+if (pcScreenSize.matches) {
+	document.querySelector('.facebook').addEventListener('click', function () {
+
 		const a = document.createElement('a');
 		a.href = "https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/";
 		a.target = '_blank';
 		document.body.appendChild(a);
 		a.click();
 		document.body.removeChild(a);
-	}, 0);
-
-});
+	})
+};
 
 // REVIEW: Form submission using ajax 
 
@@ -234,3 +233,6 @@ var swiper = new Swiper('.swiper-container', {
 	},
 });
 
+
+checkMobileSize(mobileScreenSize)
+mobileScreenSize.addListener(checkMobileSize)
