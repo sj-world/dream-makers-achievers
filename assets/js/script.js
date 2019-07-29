@@ -207,7 +207,6 @@ $('a[href*="#"]').on('click', function (e) {
 // 	autoplayDisableOnInteraction: false
 // });
 
-
 // <!--REVIEW:  Initialize Swiper -->
 
 var swiper = new Swiper('.swiper-container', {
@@ -229,26 +228,32 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// TODO: Program Section
-var programLink1 = document.querySelector('.link1');
+// TODO: Working on Program Section
+let programLinks = document.querySelectorAll('.program-link');
 
-programLink1.addEventListener('click', function () {
-    alert('link1');
-});
-
-var programLink2 = document.querySelector('.link2');
-programLink2.addEventListener('click', function () {
-    alert('link2');
-});
-
-var programLink3 = document.querySelector('.link3');
-programLink3.addEventListener('click', function () {
-    alert('link3');
-});
-
-var programLink4 = document.querySelector('.link4');
-programLink4.addEventListener('click', function () {
-    alert('link4');
+programLinks.forEach(button => {
+    button.onclick = () => {
+        switch (button.innerHTML) {
+            case programLinks[0].innerHTML:
+                console.log('link1');
+                alert('link1');
+                break;
+            case programLinks[1].innerHTML:
+                console.log('link2');
+                alert('link2');
+                break;
+            case programLinks[2].innerHTML:
+                console.log('link3');
+                alert('link3');
+                break;
+            case programLinks[3].innerHTML:
+                console.log('link4');
+                alert('link4');
+                break;
+            default:
+                break;
+        }
+    }
 });
 
 checkMobileSize(mobileScreenSize);
