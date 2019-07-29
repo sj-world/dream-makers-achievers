@@ -251,5 +251,5 @@ programLink4.addEventListener('click', function () {
     alert('link4');
 });
 
-checkMobileSize(mobileScreenSize)
-mobileScreenSize.addListener(checkMobileSize)
+checkMobileSize(mobileScreenSize);
+mobileScreenSize.addListener(checkMobileSize);
