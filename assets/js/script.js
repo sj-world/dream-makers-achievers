@@ -234,5 +234,27 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
+// TODO: Program Section
+var programLink1 = document.querySelector('.link1');
+
+programLink1.addEventListener('click', function() {
+	alert('link1');
+});
+
+var programLink2 = document.querySelector('.link2');
+programLink2.addEventListener('click', function() {
+	alert('link2');
+});
+
+var programLink3 = document.querySelector('.link3');
+programLink3.addEventListener('click', function() {
+	alert('link3');
+});
+
+var programLink4 = document.querySelector('.link4');
+programLink4.addEventListener('click', function() {
+	alert('link4');
+});
+
 checkMobileSize(mobileScreenSize)
 mobileScreenSize.addListener(checkMobileSize)
