@@ -103,9 +103,7 @@ $('a[href*="#"]').on('click', function () {
     mobileScreenSize.addListener(checkMobileSize)
 });
 
-
 // REVIEW: open facebook page when clicking on fb icon
-
 
 if (pcScreenSize.matches) {
     document.querySelector('.facebook').addEventListener('click', function () {
@@ -119,8 +117,6 @@ if (pcScreenSize.matches) {
     })
 }
 
-
-
 // REVIEW: Form submission using ajax
 
 function postToDataBase() {
@@ -132,7 +128,6 @@ function postToDataBase() {
     var field5 = $("#message").val();
     var field6 = $("#email").val();
     var field7 = $("#address").val();
-
 
     $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSd60r5wh_-4DRSxgp4g9_kMyitffQmkmXAhyKbKLVFjKIS6nQ/formResponse",
@@ -226,7 +221,6 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
-
 
 // TODO: Working on Program Section
 let programLinks = document.querySelectorAll('.program-link');
