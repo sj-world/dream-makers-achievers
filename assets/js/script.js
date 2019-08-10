@@ -85,8 +85,6 @@ function checkMobileSize(size) {
     }
 }
 
-
-
 // REVIEW: close navbar when clicking on links
 $('a[href*="#"]').on('click', function () {
     document.body.style.overflowY = "scroll";
@@ -119,7 +117,9 @@ if (pcScreenSize.matches) {
         a.click();
         document.body.removeChild(a);
     })
-};
+}
+
+
 
 // REVIEW: Form submission using ajax
 
