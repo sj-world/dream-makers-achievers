@@ -252,11 +252,3 @@ programLinks.forEach(button => {
 
 checkMobileSize(mobileScreenSize);
 mobileScreenSize.addListener(checkMobileSize);
-
-async function getData() {
-    const response = await fetch('https://gist.githubusercontent.com/shobhit-jain/fd742034152276cbea5a455bcbad467a/raw/681592ca0c4b04e3a3e00d453abda32676d3d4d6/data.json');
-    const data = await response.json();
-    return data;
-}
-
-getData().then(data => console.log(data.name));

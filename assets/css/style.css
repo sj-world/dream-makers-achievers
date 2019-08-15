@@ -1,6 +1,6 @@
 /* REVIEW: Default Styling */
 
-* {
+*, ::before, ::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -57,7 +57,7 @@ body {
 }
 
 .top-sticky-header nav ul li a {
-	color: hsl(0, 0%, 28%) !important;
+	color: hsl(0, 0%, 28%);
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 14px;
@@ -66,11 +66,11 @@ body {
 }
 
 .top-sticky-header nav ul li a:hover {
-	color: rgb(116, 188, 212) !important;
+	color: rgb(116, 188, 212);
 }
 
 .top-sticky-header nav ul li a:focus {
-	color: rgb(60, 91, 135) !important;
+	color: rgb(60, 91, 135);
 	font-weight: 600;
 }
 
