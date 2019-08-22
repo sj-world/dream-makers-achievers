@@ -222,33 +222,123 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-// TODO: Working on Program Section
+// TODO: Program Section
 let programLinks = document.querySelectorAll('.program-link');
+var firstLink = document.querySelector('.first');
+firstLink.style.backgroundColor = "#007EB7";
+firstLink.style.color = "white";
 
-programLinks.forEach(button => {
-    button.onclick = () => {
-        switch (button.innerHTML) {
-            case programLinks[0].innerHTML:
-                console.log('link1');
-                alert('link1');
-                break;
-            case programLinks[1].innerHTML:
-                console.log('link2');
-                alert('link2');
-                break;
-            case programLinks[2].innerHTML:
-                console.log('link3');
-                alert('link3');
-                break;
-            case programLinks[3].innerHTML:
-                console.log('link4');
-                alert('link4');
-                break;
-            default:
-                break;
-        }
-    }
-});
+const secondLink = document.querySelector('.second');
+const thirdLink = document.querySelector('.third');
+const fourthLink = document.querySelector('.fourth');
+
+// Requiring Program boxes
+const ProgramfirstBox = document.querySelector('.program-link-1-container');
+const ProgramSecondBox = document.querySelector('.program-link-2-container');
+const ProgramThirdBox = document.querySelector('.program-link-3-container');
+const ProgramFourthBox = document.querySelector('.program-link-4-container');
+
+// Program boxes default Setting
+ProgramSecondBox.style.display = "none";
+ProgramThirdBox.style.display = "none";
+ProgramFourthBox.style.display = "none";
+
+firstLink.onclick = function () {
+    // first link
+    firstLink.style.backgroundColor = "#007EB7";
+    firstLink.style.color = "white";
+    firstLink.style.border = "1px solid #007EB7";
+
+    // second link
+    secondLink.style.backgroundColor = "white";
+    secondLink.style.color = "#007EB7";
+
+    // third link color
+    thirdLink.style.backgroundColor = "white";
+    thirdLink.style.color = "#007EB7";
+
+    // fourth link
+    fourthLink.style.backgroundColor = "white";
+    fourthLink.style.color = "#007EB7";
+
+    // Program display
+    ProgramfirstBox.style.display = "block";
+    ProgramSecondBox.style.display = "none";
+    ProgramThirdBox.style.display = "none";
+    ProgramFourthBox.style.display = "none";
+}
+
+secondLink.onclick = function () {
+    // first link
+    firstLink.style.backgroundColor = "white";
+    firstLink.style.color = "#007EB7";
+
+    // second link
+    secondLink.style.backgroundColor = "#007EB7";
+    secondLink.style.color = "white";
+
+    // third link color
+    thirdLink.style.backgroundColor = "white";
+    thirdLink.style.color = "#007EB7";
+
+    // fourth link
+    fourthLink.style.backgroundColor = "white";
+    fourthLink.style.color = "#007EB7";
+
+    // Program display
+    ProgramfirstBox.style.display = "none";
+    ProgramSecondBox.style.display = "block";
+    ProgramThirdBox.style.display = "none";
+    ProgramFourthBox.style.display = "none";
+}
+
+thirdLink.onclick = function () {
+    // first link
+    firstLink.style.backgroundColor = "white";
+    firstLink.style.color = "#007EB7";
+
+    // second link
+    secondLink.style.backgroundColor = "white";
+    secondLink.style.color = "#007EB7";
+
+    // third link color
+    thirdLink.style.backgroundColor = "#007EB7";
+    thirdLink.style.color = "white";
+
+    // fourth link
+    fourthLink.style.backgroundColor = "white";
+    fourthLink.style.color = "#007EB7";
+
+    // Program display
+    ProgramfirstBox.style.display = "none";
+    ProgramSecondBox.style.display = "none";
+    ProgramThirdBox.style.display = "block";
+    ProgramFourthBox.style.display = "none";
+}
+
+fourthLink.onclick = function () {
+    // first link
+    firstLink.style.backgroundColor = "white";
+    firstLink.style.color = "#007EB7";
+
+    // second link
+    secondLink.style.backgroundColor = "white";
+    secondLink.style.color = "#007EB7";
+
+    // third link color
+    thirdLink.style.backgroundColor = "white";
+    thirdLink.style.color = "#007EB7";
+
+    // fourth link
+    fourthLink.style.backgroundColor = "#007EB7";
+    fourthLink.style.color = "white";
+
+    // Program display
+    ProgramfirstBox.style.display = "none";
+    ProgramSecondBox.style.display = "none";
+    ProgramThirdBox.style.display = "none";
+    ProgramFourthBox.style.display = "block";
+}
 
 checkMobileSize(mobileScreenSize);
 mobileScreenSize.addListener(checkMobileSize);

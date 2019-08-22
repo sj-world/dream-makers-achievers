@@ -2,12 +2,9 @@
 <html lang="en">
 
 <head>
-	<meta name="theme-color" content="#007297">
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="description"
-		content="DreamMakers offers Career Counselling in Kanpur with the help of it's best Career Counsellors in Kanpur that helps students in making the right career choices." />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Dream Makers & Achievers</title>
 	<link rel="icon" href="img/logo/header_logo/mindDream.webp">
 
@@ -45,14 +42,16 @@
 
 	<!-- video framework css -->
 	<link rel="stylesheet" href="video_framework/css/ckin.min.css">
+
 	<!-- local css -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/media_query/pc_screen-972.css">
-	<link rel="stylesheet" href="assets/css/media_query/mobile-screen-400.css">
-	<link rel="stylesheet" href="assets/css/media_query/mobile-screen-971.css">
+	<link rel="stylesheet" href="assets/css/pc-screen.css">
+	<link rel="stylesheet" href="assets/css/mobile-screen.css">
+	<link rel="stylesheet" href="assets/css/mobile-little-screen.css">
 </head>
 
 <body>
+
 	<!-- REVIEW: Main Container -->
 	<div class="main-container">
 		<div class="top-sticky-header">
@@ -62,8 +61,8 @@
 					<li><a href="#home" class="homeLink">HOME</a></li>
 					<li><a href="#about" class="aboutLink">ABOUT US</a></li>
 					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#programs">PROGRAMS</a></li>
 					<li><a href="#team">OUR TEAM</a></li>
-					<li><a href="#gallery">GALLERY</a></li>
 					<li><a href="#contact">CONTACT US</a></li>
 				</ul>
 			</nav>
@@ -130,8 +129,10 @@
 
 			<div class="about-section-container">
 				<div class="videoContainer">
-					<video poster="video_framework/ckin.jpg" src="video_framework/ckin.mp4" data-title="Little Video"
-						data-color="rgb(42, 114, 202)"></video>
+					<a href="https://www.youtube.com/watch?v=ha8VZ1yfhjQ" target="_blank">
+						<video poster="video_framework/dream1-1280x720.png" data-title="Little Video on Youtube :-)"
+							data-color="rgb(42, 114, 202)"></video>
+					</a>
 				</div>
 				<div class="about-content-container">
 					<h1 style="font-size: 32px; font-weight: 900; line-height: 38.66px; text-align: left;">Who We Are
@@ -245,7 +246,7 @@
 						<div class="service-counselling-icon" style="text-align: center;"><i class="fa fa-user"></i>
 
 						</div>
-						<h5>Psychotherapist</h5>
+						<h5>Psychotherapy</h5>
 						<p style="text-align: center; color: hsl(300, 0%, 45%); font-size: 15px; line-height: 22.5px;">
 							We provide professional psychotherapy
 							services for adults to help
@@ -269,20 +270,20 @@
 						<div class="service-counselling-icon" style="text-align: center;">
 							<i class="fa fa-heart"></i>
 						</div>
-						<h5 id="child-therapy">Child Psychotherapy</h5>
+						<h5 id="child-therapy">Child Counselling</h5>
 						<p style="text-align: center; color: hsl(300, 0%, 45%); font-size: 15px; line-height: 22.5px; ">
 							Psychotherapy for Children is a form of
 							psychiatric treatment
-							that involves therapeutic conversations and interactions between a therapist and a child
-							or
-							family.</p>
+							that involves therapeutic conversations and interactions between a therapist and a child or
+							family.
+						</p>
 					</div>
 					<div class="service-card card4" style="background-color: #fff;">
 						<!-- <h4 style="text-align: center;">Icon</h4> -->
 						<div class="service-counselling-icon" style="text-align: center;">
 							<i class="mdi mdi-phone-in-talk"></i>
 						</div>
-						<h5>Telephone Counselling</h5>
+						<h5>Telephonic Counselling</h5>
 						<p style="text-align: center; color: hsl(300, 0%, 45%); font-size: 15px; line-height: 22.5px;">
 							Telephone Counselling offers
 							individuals the same level of
@@ -320,62 +321,75 @@
 		</div>
 
 		<!-- TODO: working in program section -->
-		<div class="Programs-Section">
-			<!-- <h2 style="text-align: center;">Programs</h2>
+		<div class="Programs-Section" id="programs">
+			<h2
+				style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px; margin-top: 50px;padding-bottom: 30px;">
+				Programs</h2>
+			<nav>
+				<ul class="our-program-link-container">
+					<li class="link1" id="link1-container">
+						<a href="#link1-container" class="first program-link">Talk</a> </li>
+					<li class="link2" id="link2-container">
+						<a href="#link2-container" class="second program-link">Career Test</a></li>
 
-			<ul class="our-program-link-container">
-				<li class="link1 program-link">Career Counselling Programs</li>
-				<li class="link2 program-link">Application Programs</li>
-				<li class="link3 program-link">Achievers for Schools</li>
-				<li class="link4 program-link">Achievers for Counsellors</li>
-			</ul> -->
+					<li class="link3" id="link3-container"> <a href="#link3-container" class="third program-link">Career
+							Options</a>
+					</li>
+					<li class="link4" id="link4-container"><a href="#link4-container"
+							class="fourth program-link">Institute</a></li>
+				</ul>
+			</nav>
 
 			<div class="program-container">
 				<!-- link1 -->
-				<!-- <div class="program-link-1-container" style="display: flex; justify-content: space-evenly;">
-				<div class="card1" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 1</h3>
+				<div class="program-link-1-container" style="border: 1px solid; text-align: center;">
+					<div class="card1 program-card-styling">
+						<h3>Counseling Program Box 1</h3>
 
+					</div>
+					<div class="card2 program-card-styling">
+						<h3>Counselling Program box 2</h3>
+					</div>
+					<div class="card3 program-card-styling">
+						<h3>Counselling Program 3</h3>
+					</div>
 				</div>
-				<div class="card2" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 2</h3>
-				</div>
-				<div class="card3" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 3</h3>
-				</div>
-			</div> -->
 				<!-- link2 -->
-				<!-- <div class="program-link-2-container" style="display: flex; justify-content: space-evenly;">
-				<div class="card1" style="border: 1px solid; width: 250px; height: 300px;">
-                    <h3>heading 1</h3>
-
+				<div class="program-link-2-container" style="border: 1px solid; text-align: center;">
+					<div class="card1 program-card-styling">
+						<h3>Application Program Box 1</h3>
+					</div>
+					<div class="card2 program-card-styling">
+						<h3>Application Program Box 2</h3>
+					</div>
+					<div class="card3 program-card-styling">
+						<h3>Application Program Box 3</h3>
+					</div>
 				</div>
-				<div class="card2" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 2</h3>
-				</div>
-            </div> -->
 				<!-- link3 -->
-				<!-- <div class="program-link-3-container" style="display: flex; justify-content: space-evenly;">
-				<div class="card1" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 1</h3>
-
+				<div class="program-link-3-container" style="border: 1px solid; text-align: center;">
+					<div class="card1 program-card-styling">
+						<h3>Achievers for schools Box 1</h3>
+					</div>
+					<div class="card2 program-card-styling">
+						<h3>Achievers for schools Box 2</h3>
+					</div>
+					<div class="card3 program-card-styling">
+						<h3>Achievers for schools Box 3</h3>
+					</div>
 				</div>
-				<div class="card2" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 2</h3>
-				</div>
-				<div class="card3" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 3</h3>
-				</div>
-			</div> -->
 				<!-- link4 -->
-				<!-- <div class="program-link-2-container" style="display: flex; justify-content: space-evenly;">
-				<div class="card1" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 1</h3>
+				<div class="program-link-4-container" style="border: 1px solid; text-align: center;">
+					<div class="card1 program-card-styling">
+						<h3>Achievers for Counsellers Box 1</h3>
+					</div>
+					<div class="card2 program-card-styling">
+						<h3>Achievers for Counsellers Box 2</h3>
+					</div>
+					<div class="card3 program-card-styling">
+						<h3>Achievers for Counsellers Box 3</h3>
+					</div>
 				</div>
-				<div class="card2" style="border: 1px solid; width: 250px; height: 300px;">
-					<h3>heading 2</h3>
-				</div>
-			</div> -->
 			</div>
 		</div>
 
@@ -431,27 +445,22 @@
 		</div>
 
 		<!-- REVIEW: Gallery Section -->
-		<div id="gallery" class="gallery-container">
+		<!-- <div id="gallery" class="gallery-container">
 			<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
 				class="gallery-heading">Gallery</h2>
 			<div class="container">
 				<div class="row">
 					<div class="row">
 						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-							<img class="img-thumbnail"
-								src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-								alt="Another alt text">
+							<img class="img-thumbnail" src="img/gallery_img/Counselling.jpg" alt="Another alt text">
 						</div>
 						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-							<img class="img-thumbnail"
-								src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+							<img class="img-thumbnail" src="img/gallery_img/counselling-services-300x200.jpg"
 								alt="Another alt text">
 						</div>
 
 						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-							<img class="img-thumbnail"
-								src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-								alt="Another alt text">
+							<img class="img-thumbnail" src="img/gallery_img/images.jpeg" alt="Another alt text">
 						</div>
 						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
 							<img class="img-thumbnail"
@@ -503,7 +512,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- REVIEW: Contact Section -->
 		<div id="contact" style="margin-bottom: 50px;">
@@ -779,7 +788,6 @@
 
 	<!-- Local JS  -->
 	<script src="assets/js/script.js"></script>
-
 </body>
 
 </html>
