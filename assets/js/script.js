@@ -69,7 +69,8 @@ $(document.body).mousedown(function (event) {
     var target = $(event.target);
     if (target.parents().andSelf().is(openBar) || target.parents().andSelf().is(navContainer)) {
         navContainer.style.left = "0px";
-    } else {
+    }
+    else {
         navContainer.style.left = "-150px";
         toggleCloseBarIcon()
         document.body.style.overflowY = "scroll";
@@ -124,29 +125,30 @@ function postToDataBase() {
     var field1 = $("#firstName").val();
     var field2 = $("#lastName").val();
     var field3 = $("#mobile").val();
-    var field4 = $("#subject").val();
+    var field4 = $("#question").val();
     var field5 = $("#message").val();
     var field6 = $("#email").val();
     var field7 = $("#address").val();
 
     $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSd60r5wh_-4DRSxgp4g9_kMyitffQmkmXAhyKbKLVFjKIS6nQ/formResponse",
-        data: { "entry.1062285405": field1, "entry.1115814915": field2, "entry.305354010": field3, "entry.2137892250": field4, "entry.334434444": field5, "emailAddress": field6, "entry.220273468": field7 },
+        url: "https://docs.google.com/forms/d/e/1FAIpQLScxFD1DDFzIOfxt4TVJNbcNBGxrItc7vho4cpz_CaQ3D2cZbA/formResponse",
+        data: { "entry.1154047464": field1, "entry.2068507921": field2, "entry.1825414465": field3, "entry.479585436": field4, "entry.479585436": field5, "entry.1229940529": field6, "entry.1192885676": field7 },
         type: "POST",
         dataType: "xml",
-        success: function () {
-            console.log('your message has been sent ..!')
-        },
+        // success: function () {
+        //     console.log('your message has been sent ..!')
+        // },
 
-        error: function () {
-            console.log('problem with server ..!')
-        }
+        // error: function () {
+        //     console.log('problem with server ..!')
+        // }
     });
-    return false;
+    return;
 }
 
 var form = document.querySelector('#form');
 form.addEventListener("submit", function (e) {
+    postToDataBase();
 
     e.preventDefault();    //stop form from submitting default
     e.target.firstName.value = '';
@@ -162,7 +164,6 @@ form.addEventListener("submit", function (e) {
     setTimeout(() => {
         document.querySelector('.submit-box-alert').style.display = "none";
     }, 7000);
-    postToDataBase();
 });
 
 // REVIEW: back to top icon
