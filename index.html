@@ -68,6 +68,7 @@
 			</nav>
 		</div>
 
+
 		<i class="fa fa-align-right"></i>
 		<i class="fa fa-times-rectangle"></i>
 
@@ -203,8 +204,11 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+
+		<!-- demo -->
+
+		<!-- demo end -->
 
 		<!-- REVIEW: Service Section -->
 		<div id="services">
@@ -322,10 +326,10 @@
 
 		<!-- TODO: working in program section -->
 		<div class="Programs-Section" id="programs">
-			<h2
+			<!-- <h2
 				style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px; margin-top: 50px;padding-bottom: 30px;">
-				Programs</h2>
-			<nav>
+				Programs</h2> -->
+			<!-- <nav>
 				<ul class="our-program-link-container">
 					<li class="link1" id="link1-container">
 						<a href="#link1-container" class="first program-link">Talk</a> </li>
@@ -338,11 +342,11 @@
 					<li class="link4" id="link4-container"><a href="#link4-container"
 							class="fourth program-link">Institute</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 
 			<div class="program-container">
 				<!-- link1 -->
-				<div class="program-link-1-container" style="border: 1px solid; text-align: center;">
+				<!-- <div class="program-link-1-container" style="border: 1px solid; text-align: center;">
 					<div class="card1 program-card-styling">
 						<h3>Counseling Program Box 1</h3>
 
@@ -353,9 +357,9 @@
 					<div class="card3 program-card-styling">
 						<h3>Counselling Program 3</h3>
 					</div>
-				</div>
+				</div> -->
 				<!-- link2 -->
-				<div class="program-link-2-container" style="border: 1px solid; text-align: center;">
+				<!-- <div class="program-link-2-container" style="border: 1px solid; text-align: center;">
 					<div class="card1 program-card-styling">
 						<h3>Application Program Box 1</h3>
 					</div>
@@ -365,9 +369,9 @@
 					<div class="card3 program-card-styling">
 						<h3>Application Program Box 3</h3>
 					</div>
-				</div>
+				</div> -->
 				<!-- link3 -->
-				<div class="program-link-3-container" style="border: 1px solid; text-align: center;">
+				<!-- <div class="program-link-3-container" style="border: 1px solid; text-align: center;">
 					<div class="card1 program-card-styling">
 						<h3>Achievers for schools Box 1</h3>
 					</div>
@@ -377,9 +381,9 @@
 					<div class="card3 program-card-styling">
 						<h3>Achievers for schools Box 3</h3>
 					</div>
-				</div>
+				</div> -->
 				<!-- link4 -->
-				<div class="program-link-4-container" style="border: 1px solid; text-align: center;">
+				<!-- <div class="program-link-4-container" style="border: 1px solid; text-align: center;">
 					<div class="card1 program-card-styling">
 						<h3>Achievers for Counsellers Box 1</h3>
 					</div>
@@ -389,7 +393,7 @@
 					<div class="card3 program-card-styling">
 						<h3>Achievers for Counsellers Box 3</h3>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -517,48 +521,49 @@
 		<!-- REVIEW: Contact Section -->
 		<div id="contact" style="margin-bottom: 50px;">
 			<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
-				class="contact-heading">Get In Touch</h2>
+				class="contact-heading">Book An Appointment</h2>
 
 			<!-- form section -->
 			<div class="container form-container">
-				<h2 class="fillForm">Fill The Form :</h2>
-				<form class="myForm" id="form" onsubmit="return postToDataBase();">
+				<!-- <h2 class="fillForm">Fill The Form :</h2> -->
+				<form class="myForm" id="form">
 					<div class="form-group">
-						<label for="firstName">First Name: <span class="asterisk"
-								style="color: darkgreen;">*</span></label>
+						<label for="firstName">First Name <span class="asterisk"
+								style="color: darkgreen;"><b>*</b></span></label>
 						<input type="text" class="form-control" id="firstName" placeholder="Enter First Name"
 							name="firstName" required />
 					</div>
 					<div class="form-group">
-						<label for="lastName">Last Name: <span class="asterisk"
-								style="color: darkgreen;">*</span></label>
+						<label for="lastName">Last Name <span class="asterisk"
+								style="color: darkgreen;"><b>*</b></span></label>
 						<input type="text" class="form-control" id="lastName" placeholder="Enter Last Name"
 							name="lastName" required />
 					</div>
 					<div class="form-group">
-						<label for="email">Email: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<input type="email" name="email" class="form-control" id="email" placeholder="Enter Email"
-							required>
+						<label for="email">Email :</label>
+						<input type="email" name="email" class="form-control" id="email"
+							placeholder="Enter Your Email ( Optional )">
 					</div>
 					<div class="form-group">
-						<label for="mobile">Phone No: <span class="asterisk" style="color: darkgreen;">*</span></label>
+						<label for="mobile">Phone No <span class="asterisk"
+								style="color: darkgreen;"><b>*</b></span></label>
 						<input type="tel" maxlength="14" class="form-control" id="mobile"
 							placeholder="Ex. +91 0123456789" name="phone" required />
 					</div>
 					<div class="form-group">
-						<label for="address">Address: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<input type="text" class="form-control" id="address" placeholder="Your Address" name="address"
-							required />
+						<label for="address">Address :</label>
+						<input type="text" class="form-control" id="address" placeholder="Your Address ( Optional )"
+							name="address" />
 					</div>
 					<div class="form-group">
-						<label for="subject">Subject: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<input type="text" id="subject" class="form-control" placeholder="Enter Your Subject"
-							name="subject" required>
+						<label for="question">Ask Your Question : </label>
+						<input type="text" id="question" class="form-control"
+							placeholder="If you have any question ( Optional )" name="subject">
 					</div>
 					<div class="form-group">
-						<label for="message">Message: <span class="asterisk" style="color: darkgreen;">*</span></label>
-						<textarea name="message" minlength="100" class="form-control" id="message" cols="30" rows="10"
-							placeholder="Describe here ..!  (minimum 100 words)" required></textarea>
+						<label for="message">Message : </label>
+						<textarea name="message" class="form-control" id="message" cols="30" rows="10"
+							placeholder="Describe here ..! ( If you have any doubts )"></textarea>
 					</div>
 					<button type="submit" class="btn btn-primary form-submit-btn" id="sbmt">
 						Submit Now
@@ -783,8 +788,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 	</script>
 
+
+	<!-- popper js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+
 	<!-- BootStrap latest Js -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
 	<!-- Local JS  -->
 	<script src="assets/js/script.js"></script>
