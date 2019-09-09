@@ -282,6 +282,10 @@
         margin-bottom: 25px;
     }
     /* Program Section */
+    .program-heading {
+        margin-top: 30px;
+        padding-bottom: 8px;
+    }
     .our-program-link-container li a {
         font-size: 13px;
     }
