@@ -288,4 +288,9 @@
     .our-program-link-container {
         width: 100%;
     }
+    .program-card-styling {
+        display: block;
+        width: 90%;
+        margin: 25px auto;
+    }
 }

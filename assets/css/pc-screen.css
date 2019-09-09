@@ -91,6 +91,8 @@
         color: white;
     }
     .book-now-container {
+        cursor: -webkit-grab;
+        cursor: grab;
         z-index: 100;
         position: absolute;
         width: 100%;

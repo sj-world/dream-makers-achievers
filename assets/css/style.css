@@ -155,7 +155,7 @@ body {
 .google-map {
     max-width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 3%;
     cursor: pointer;
     transition: 0.3s;
@@ -355,7 +355,7 @@ body {
     border: 1px solid #007EB7 !important;
     text-align: center;
     cursor: pointer;
-    border: 1px solid;
+    /* border: 1px solid; */
     text-decoration: none;
     padding: 5px 20px;
     margin: 0;
@@ -364,11 +364,21 @@ body {
 /* REVIEW: Program Container Section */
 
 .program-card-styling {
-    border: 1px solid;
-    width: 250px;
-    height: 300px;
+    box-shadow: 0px 0px 2px 0.1px rgb(187, 182, 182);
+    padding: 15px;
+    /* border: 1px solid; */
+    width: 25%;
+    height: auto;
     display: inline-block;
-    margin: 20px 50px;
+    margin: 0 20px;
+}
+
+.program-box-hr {
+    width: 120px;
+    margin: 16px auto;
+    padding: 0.7px;
+    background-color: rgba(209, 202, 202, 0.144);
+    box-shadow: 0px 1px 1px 0px rgba(224, 221, 221, 0.658);
 }
 
 /* media query for programs */
