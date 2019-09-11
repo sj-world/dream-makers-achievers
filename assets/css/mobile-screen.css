@@ -105,23 +105,27 @@
         align-content: center;
     }
     .book_now {
+        border: 1px solid rgba(227, 232, 240, 0.507);
+        background-color: rgba(228, 234, 241, 0.116);
+        /* box-shadow: 0px 0px 2px 0.1px white; */
         margin-top: 150px;
         align-self: center;
         color: rgba(247, 244, 244, 0.877);
-        background-color: #0069FF;
+        /* background-color: #0069FF; */
         z-index: 100;
-        padding: 15px 30px;
+        padding: 12px 30px;
         border-radius: 10px;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
     }
     .book_now:hover {
         text-decoration: none;
         background-color: rgba(247, 244, 244, 0.877) !important;
+        box-shadow: 0px 0px 5px 0.1px white;
+        border: 1px solid white;
         padding: 13px 28px;
-        color: blue !important;
-        border: 2px solid blue;
+        color: black !important;
         transition: 0.3s;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
