@@ -1,9 +1,9 @@
 @media screen and (min-width: 973px) {
     /* REVIEW: Preloader */
-    div#preloader img {
+    /* div#preloader img {
         width: 160px;
         height: 25%;
-    }
+    } */
     /* REVIEW: TOP Sticky Header  */
     .headerLogo {
         height: 33px;
