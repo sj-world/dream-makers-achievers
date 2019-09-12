@@ -141,6 +141,25 @@ body {
     height: 100%;
 }
 
+.about-goal-mission {
+    display: flex;
+    max-width: 91%;
+    margin: 0 auto;
+}
+
+.goal-container, .mission-container, .vision-container {
+    flex: 1;
+    padding: 25px 0;
+}
+
+.goal-content, .mission-content {
+    padding: 0 40px 0 10px;
+}
+
+.vision-content {
+    padding: 0 0px 0 10px;
+}
+
 /* REVIEW: Footer Section */
 
 .footer-container {

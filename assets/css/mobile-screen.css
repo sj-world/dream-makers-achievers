@@ -215,6 +215,17 @@
         color: white;
         font-size: 20px;
     }
+    .about-goal-mission {
+        display: flex;
+        flex-direction: column;
+        max-width: 87%;
+    }
+    .goal-content, .mission-content, .vision-content {
+        padding: 0 0px 0 10px;
+    }
+    .goal-container, .mission-container, .vision-container {
+        padding: 15px 0;
+    }
     /* REVIEW: Service Section */
     .service-container {
         width: 85%;
