@@ -369,9 +369,9 @@ function checkCity() {
     } else {
         counsellers_in_delhi.style.display = "none";
     }
-    // If Lukhnow
+    // If Lucknow
     const counsellers_in_lukhnow = document.querySelector('.counsellers_in_lukhnow');
-    if (x.options[cityName].text == 'Lukhnow') {
+    if (x.options[cityName].text == 'Lucknow') {
         counsellers_in_lukhnow.style.display = "block";
     } else {
         counsellers_in_lukhnow.style.display = "none";
