@@ -18,7 +18,7 @@ function openSideNav() {
 }
 
 function closeSideNav() {
-    navContainer.style.left = "-150px";
+    navContainer.style.left = "-155px";
 }
 
 function toggleOpenBarIcon() {
@@ -71,7 +71,7 @@ $(document.body).mousedown(function (event) {
         navContainer.style.left = "0px";
     }
     else {
-        navContainer.style.left = "-150px";
+        navContainer.style.left = "-155px";
         toggleCloseBarIcon()
         document.body.style.overflowY = "scroll";
     }
@@ -89,7 +89,7 @@ function checkMobileSize(size) {
 // REVIEW: close navbar when clicking on links
 $('a[href*="#"]').on('click', function () {
     document.body.style.overflowY = "scroll";
-    document.querySelector('nav').style.left = "-150px";
+    document.querySelector('nav').style.left = "-155px";
 
     function checkMobileSize(size) {
         if (size.matches) {
@@ -167,7 +167,6 @@ form.addEventListener("submit", function (e) {
 });
 
 // REVIEW: back to top icon
-
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -339,6 +338,58 @@ fourthLink.onclick = function () {
     ProgramSecondBox.style.display = "none";
     ProgramThirdBox.style.display = "none";
     ProgramFourthBox.style.display = "block";
+}
+
+// Counsellers section
+
+function checkCity() {
+    var x = document.getElementById("city");
+    var cityName = x.selectedIndex;
+    var counsellersCity = document.getElementById("counsellers_city");
+    counsellersCity.innerHTML = x.options[cityName].text;
+
+    // If Kanpur
+    const counsellers_in_kanpur = document.querySelector('.counsellers_in_kanpur');
+    if (x.options[cityName].text == 'Kanpur') {
+        counsellers_in_kanpur.style.display = "block";
+    } else {
+        counsellers_in_kanpur.style.display = "none";
+    }
+    // If Allahabad
+    const counsellers_in_allahabad = document.querySelector('.counsellers_in_allahabad');
+    if (x.options[cityName].text == 'Allahabad') {
+        counsellers_in_allahabad.style.display = "block";
+    } else {
+        counsellers_in_allahabad.style.display = "none";
+    }
+    // If Delhi
+    const counsellers_in_delhi = document.querySelector('.counsellers_in_delhi');
+    if (x.options[cityName].text == 'Delhi') {
+        counsellers_in_delhi.style.display = "block";
+    } else {
+        counsellers_in_delhi.style.display = "none";
+    }
+    // If Lukhnow
+    const counsellers_in_lukhnow = document.querySelector('.counsellers_in_lukhnow');
+    if (x.options[cityName].text == 'Lukhnow') {
+        counsellers_in_lukhnow.style.display = "block";
+    } else {
+        counsellers_in_lukhnow.style.display = "none";
+    }
+    // If lakhimpur kheri
+    const counsellers_in_lakhimpur = document.querySelector('.counsellers_in_lakhimpur');
+    if (x.options[cityName].text == 'Lakhimpur Kheri') {
+        counsellers_in_lakhimpur.style.display = "block";
+    } else {
+        counsellers_in_lakhimpur.style.display = "none";
+    }
+    // If Gorakhpur
+    const counsellers_in_gorakhpur = document.querySelector('.counsellers_in_gorakhpur');
+    if (x.options[cityName].text == 'Gorakhpur') {
+        counsellers_in_gorakhpur.style.display = "block";
+    } else {
+        counsellers_in_gorakhpur.style.display = "none";
+    }
 }
 
 checkMobileSize(mobileScreenSize);

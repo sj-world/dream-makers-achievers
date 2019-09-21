@@ -1,8 +1,7 @@
 @media screen and (max-width: 972px) {
-    /* REVIEW: Preloader */
-    div#preloader img {
-        width: 100px;
-        height: 18%;
+    /* Common ( Universal ) */
+    .section-heading {
+        font-size: 25px !important;
     }
     /* REVIEW:  sticky header styling */
     .top-sticky-header {
@@ -16,22 +15,27 @@
     .top-sticky-header nav {
         box-shadow: 0px 0px 0.5px 0.1px;
         position: fixed;
-        left: -150px;
+        left: -155px;
         transition: 0.8s;
         background-color: rgb(0, 113, 151) !important;
         top: 0;
-        bottom: -200px;
-        width: 150px;
+        /* bottom: -200px; */
+        height: 100vh;
+        width: 155px;
+        overflow-y: auto;
+        padding-bottom: 100px;
     }
     .top-sticky-header nav ul li {
         display: block;
-        margin: 20px;
+        border-bottom: 2px ridge rgb(1, 129, 172);
+        padding: 8px 0;
         text-align: center;
     }
     .top-sticky-header nav ul li a {
-        font-size: 13px;
+        /* font-size: 13px; */
+        font-size: 10.5px;
         color: hsl(0, 0%, 100%) !important;
-        font-weight: 500 !important;
+        font-weight: 400 !important;
     }
     .top-sticky-header nav ul li a:hover {
         color: rgb(101, 216, 255) !important;
@@ -107,11 +111,9 @@
     .book_now {
         border: 1px solid rgba(227, 232, 240, 0.507);
         background-color: rgba(228, 234, 241, 0.116);
-        /* box-shadow: 0px 0px 2px 0.1px white; */
         margin-top: 150px;
         align-self: center;
         color: rgba(247, 244, 244, 0.877);
-        /* background-color: #0069FF; */
         z-index: 100;
         padding: 12px 30px;
         border-radius: 10px;
@@ -142,7 +144,6 @@
     }
     .phone, .whatsapp, .facebook, .youtube {
         z-index: 20;
-        /* border: 2px solid; */
         margin: 15px 0px 0px -1px;
         cursor: pointer;
         width: 20px;
@@ -168,7 +169,22 @@
         flex-direction: column;
     }
     .contact-info-container, .quick-link-container, .therapie-container {
-        margin-top: 10px;
+        margin-top: 15px;
+    }
+    .map-container h5 {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .go-top-svg {
+        font-size: 17px;
+        color: hsl(215, 100%, 50%);
+        background-color: rgba(206, 204, 204, 0.466) !important;
+        border-radius: 48%;
+        -webkit-border-radius: 48%;
+        -moz-border-radius: 48%;
+        -ms-border-radius: 48%;
+        -o-border-radius: 48%;
+        padding: 11px !important;
     }
     /* REVIEW: About Section */
     .about-section-container {
@@ -210,7 +226,6 @@
         border-bottom-left-radius: 3px;
     }
     .about-counselling-icon {
-        /* padding: 30px 0; */
         padding: 30px 0px;
         color: white;
         font-size: 20px;
@@ -257,10 +272,8 @@
     }
     .our-services>p {
         padding-bottom: 20px;
-        /* border: 1px solid !important; */
     }
     .service-card>p {
-        /* border: 1px solid; */
         padding-top: 5px;
         padding-bottom: 40px;
         padding-left: 15px;
@@ -280,16 +293,15 @@
     .team-heading {
         padding-bottom: 25px;
     }
-    /* REVIEW: Gallery Section */
-    .gallery-container {
-        width: 85%;
-        margin: 0 auto;
-        margin-bottom: 25px;
-    }
-    .gallery-heading {
-        margin-bottom: 25px;
-    }
     /* REVIEW: Contact Section */
+    .contact-container {
+        width: 87%;
+        margin: 0 auto;
+    }
+    .contact-container h2 {
+        font-size: 25px !important;
+        padding: 0 20px;
+    }
     .fillForm {
         display: none;
     }
@@ -311,5 +323,14 @@
         display: block;
         width: 90%;
         margin: 25px auto;
+    }
+    /* Counsellers Section */
+    .counsellers-container {
+        width: 87%;
+    }
+    /* Testimonial Section */
+    .testimonial-container {
+        width: 84%;
+        margin: 0 auto;
     }
 }

@@ -16,22 +16,6 @@ body {
     margin: 0 auto;
 }
 
-/* REVIEW: Preloader */
-
-/* div#preloader {
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(255, 255, 255);
-} */
-
 /* REVIEW: Top Sticky Header */
 
 .top-sticky-header {
@@ -48,6 +32,7 @@ body {
 }
 
 .top-sticky-header li {
+    /* border: 1px solid; */
     list-style: none;
     display: inline-flex;
 }
@@ -60,7 +45,7 @@ body {
     color: hsl(0, 0%, 28%) !important;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 11.2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
 }
@@ -315,8 +300,6 @@ body {
     border: 1px solid;
     font-size: 40px;
     color: rgba(255, 255, 255, 0.973);
-    /* background-image: -webkit-linear-gradient(top, rgb(117, 230, 207) 0%, rgb(62, 84, 138) 100%); */
-    /* background-image: -o-linear-gradient(top, rgb(39, 151, 123) 0%, rgb(84, 118, 192) 100%); */
     background-image: linear-gradient(to bottom, rgba(11, 138, 119, 0.788) 0%, rgba(4, 45, 133, 0.753) 100%);
     padding: 5% 0;
     margin-bottom: 4%;
@@ -331,22 +314,6 @@ body {
 
 .service-card {
     box-shadow: 0px 0px 2px 0.1px rgb(150, 168, 189);
-}
-
-/* REVIEW: Gallery Section */
-
-/* .btn:focus, .btn:active, button:focus, button:active {
-	outline: none !important;
-	box-shadow: none !important;
-} */
-
-#image-gallery .modal-footer {
-    display: block;
-}
-
-.thumb {
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 /* REVIEW: Program Section */
@@ -414,5 +381,152 @@ body {
 @media screen and (max-width: 1000px) {
     .our-program-link-container {
         flex-direction: column;
+    }
+}
+
+/* Counsellers section */
+
+.counsellers-container {
+    border: 1px solid;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.counsellers_in_kanpur, .counsellers_in_allahabad, .counsellers_in_delhi, .counsellers_in_lukhnow, .counsellers_in_lakhimpur, .counsellers_in_gorakhpur {
+    text-align: center;
+}
+
+.counseller-city-list {
+    /* box-shadow: 0px 0px 3px 0.5px rgb(236, 245, 247); */
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 25px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.counseller-city-list:hover {
+    border: 1px solid rgba(48, 47, 47, 0.295);
+    box-shadow: 0px 0px 3.7px 1.5px rgba(221, 224, 224, 0.623);
+}
+
+.counseller-city-list:active {
+    /* background-color: rgb(255, 255, 255); */
+    border: 1px solid rgba(43, 43, 43, 0.438);
+}
+
+.select-city {
+    font-size: 15px;
+    color: gray;
+}
+
+.checked {
+    color: orange;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 295px;
+    margin: 20px 1%;
+    /* margin: auto; */
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card .button {
+    position: relative;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #007298;
+}
+
+.card button:hover, .card a:hover {
+    opacity: 0.7;
+}
+
+/* Testimonial section */
+
+.testimonial-container h2 {
+    margin-bottom: 50px;
+}
+
+.testimonial-container {
+    padding-bottom: 50px;
+}
+
+.testimonial-box {
+    /* border: 2px solid #ccc; */
+    /* background-color: #eee; */
+    border: 2px solid rgb(233, 231, 231);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+}
+
+.testimonial-box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.testimonial-box img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-box span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.testimonial-container {
+    width: 91%;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .testimonial-box {
+        text-align: center;
+    }
+    .testimonial-box img {
+        margin: auto;
+        float: none;
+        display: block;
     }
 }

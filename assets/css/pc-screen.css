@@ -1,16 +1,11 @@
 @media screen and (min-width: 973px) {
-    /* REVIEW: Preloader */
-    /* div#preloader img {
-        width: 160px;
-        height: 25%;
-    } */
     /* REVIEW: TOP Sticky Header  */
     .headerLogo {
         height: 33px;
     }
     .top-sticky-header {
         height: 70px;
-        padding: 0 75px;
+        padding: 0 55px;
     }
     .top-sticky-header nav ul {
         height: 100%;
@@ -18,7 +13,7 @@
         align-items: center;
     }
     .top-sticky-header li {
-        margin: 0 20px;
+        margin: 0 18px;
     }
     .fa-align-right, .fa-times-rectangle {
         display: none !important;
@@ -219,7 +214,6 @@
     }
     .our-services>p {
         padding-bottom: 20px;
-        /* border: 1px solid !important; */
     }
     .service-cards {
         padding-bottom: 50px;
@@ -244,14 +238,5 @@
     }
     .team-member {
         width: 30%;
-    }
-    /* REVIEW: Gallery Section */
-    .gallery-container {
-        width: 91%;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
-    .gallery-heading {
-        margin-bottom: 50px;
     }
 }
