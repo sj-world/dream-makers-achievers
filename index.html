@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
 	<meta name="theme-color" content="#007298">
@@ -21,6 +21,7 @@
 	<meta property="og:site_name" content="dreammakers" />
 	<!-- REVIEW: CSS Files -->
 	<!-- End of SEO OPTIMIZATION -->
+
 
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -47,10 +48,14 @@
 
 
 	<!-- local css -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="preload" href="assets/css/style.css" as="style">
 	<link rel="stylesheet" href="assets/css/pc-screen.css">
+	<link rel="preload" href="assets/css/pc-screen.css" as="style">
 	<link rel="stylesheet" href="assets/css/mobile-screen.css">
+	<link rel="preload" href="assets/css/mobile-screen.css" as="style">
 	<link rel="stylesheet" href="assets/css/mobile-little-screen.css">
+	<link rel="preload" href="assets/css/mobile-little-screen.css" as="style">
 </head>
 
 <body>
@@ -58,8 +63,9 @@
 	<!-- REVIEW: Main Container -->
 	<div class="main-container">
 		<div class="top-sticky-header">
-			<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/logo/fineLogo.webp"
-				alt="" style="width: auto;" class="headerLogo">
+			<!-- <img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/logo/fineLogo.webp"
+				alt="" class="headerLogo"> -->
+			<img src="img/logo/3.svg" alt="" class="headerLogo" style="height: 45px;">
 			<nav>
 				<ul>
 					<li><a href="#home" class="homeLink">HOME</a></li>
@@ -68,7 +74,7 @@
 					<li><a href="#programs">PROGRAMS</a></li>
 					<li><a href="#team">OUR TEAM</a></li>
 					<li><a href="#counsellers">COUNSELLERS</a></li>
-					<li><a href="#testimonials">TESTIMONIALS</a></li>
+					<li><a href="#testimonials">Success Stories</a></li>
 					<li><a href="#blog">BLOG</a></li>
 					<li><a href="#gallery">GALLERY</a></li>
 					<li><a href="#contact">Book Appointment</a></li>
@@ -239,7 +245,7 @@
 			<div class="mission-container">
 				<div class="mission" style="display: inline-flex;">
 					<div>
-						<img src="img/about_img/mission.png" alt="goal" style="width: 55px;">
+						<img src="img/about_img/mission.png" alt="goal">
 					</div>
 					<div class="mission-content">
 						<h2>Mission</h2>
@@ -286,7 +292,7 @@
 					<a href="#contact" class="about-contact-link">Book Appointment</a>
 				</div>
 				<div class="service-right-image">
-					<img src="img/service_img/about-01-945x730.webp" alt="" style="max-width: 100%; height: auto;">
+					<img src="img/service_img/about-1100x770.jpeg" alt="" style="max-width: 100%; height: auto;">
 				</div>
 			</div>
 			<div class="our-services" style="background-color: rgb(241, 249, 251);">
@@ -378,6 +384,7 @@
 			</div>
 		</div>
 
+
 		<!-- TODO: working in program section -->
 		<div class="Programs-Section" id="programs">
 			<h2 class="program-heading section-heading">Programs</h2>
@@ -386,7 +393,7 @@
 					<li class="link1" id="link1-container">
 						<a href="#programs" class="first program-link">Career Counselling Programs</a> </li>
 					<li class="link3" id="link3-container"> <a href="#programs" class="third program-link">For
-							Career Professionals</a>
+							Career Library</a>
 					</li>
 
 					<li class="link4" id="link4-container"><a href="#programs" class="fourth program-link">For
@@ -453,14 +460,23 @@
 				<!-- link3 -->
 				<div class="program-link-3-container" style="text-align: center;">
 					<div class="card1 program-card-styling">
-						<h3>Professional Heading</h3>
+						<h3>Download A - Z career library</h3>
+						<hr class="program-box-hr">
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ducimus non corporis vel
 							doloribus nesciunt quos voluptate accusamus, distinctio nisi consectetur optio placeat
-							recusandae dolore veniam voluptatum, dicta incidunt fugiat adipisci harum totam! Nostrum
-							necessitatibus illum fugit.</p>
+							recusanda.</p>
+						<a href="pdf/career_counselling.pdf" download="career_library.pdf"
+							class="program-pdf-download-link">Download Career
+							Library</a>
+
+						<a href="pdf/career_counselling_(A-Z).pdf" download="career_library_(A-Z).pdf"
+							class="program-pdf-download-link">Download A
+							- Z
+							Career Library</a>
 					</div>
-					<div class="card2 program-card-styling">
+					<!-- <div class="card2 program-card-styling">
 						<h3>Professional Heading</h3>
+						<hr class="program-box-hr">
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ducimus non corporis vel
 							doloribus nesciunt quos voluptate accusamus, distinctio nisi consectetur optio placeat
 							recusandae dolore veniam voluptatum, dicta incidunt fugiat adipisci harum totam! Nostrum
@@ -468,12 +484,14 @@
 					</div>
 					<div class="card3 program-card-styling">
 						<h3>Professional Heading</h3>
+						<hr class="program-box-hr">
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ducimus non corporis vel
 							doloribus nesciunt quos voluptate accusamus, distinctio nisi consectetur optio placeat
 							recusandae dolore veniam voluptatum, dicta incidunt fugiat adipisci harum totam! Nostrum
 							necessitatibus illum fugit.</p>
-					</div>
+					</div> -->
 				</div>
+
 				<!-- link4 -->
 				<div class="program-link-4-container" style="text-align: center;">
 					<div class="card1 program-card-styling">
@@ -504,6 +522,12 @@
 			</div>
 		</div>
 
+		<!-- WhatsApp Share -->
+		<!-- <a alt="Whatsapp" href="whatsapp://send" data-text="Text to share" data-href="http://example.com/url-to-share"
+			class="whatsapp wa_btn"><span class="ion-social-whatsapp"></span> Whatsapp</a> -->
+
+		<!-- WhatsApp Share End -->
+
 		<!-- REVIEW: Team Section -->
 		<div id="team">
 
@@ -511,714 +535,821 @@
 				style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px; margin-bottom: 25px;">
 				Team Members</h2>
 			<!-- team member 1 -->
+
 			<div class="team-container">
 				<div class="team-member">
-					<div class="img-left"><img class="img-round" src="img/Team_img/teamMember1.png" alt="member1"
-							width="160" height="150"></div>
+					<div class="img-left"><img class="img-round team-img1"
+							src="img/counseller_img/Kanpur/Dr.L.K.Singh.png" alt="member1"></div>
 					<div class="unit-body">
-						<h4 class="team-minimal-title" style="color: rgb(0, 125, 255);">Nivedita Goel</h4>
-						<p class="team-minimal-cite">Consultant Clinical Psychologist</p>
-						<p class="team-minimal-text">Ms. Nivedita is a trained Psychologist, Counsellor and with 7+
-							years of experience. She deals with issues pertaining to anxiety, mood swings, exam
-							pressure, peer pressure, careers, abusive relationships, personality disorders, etc.</p>
+						<h4 class="team-minimal-title team-member-name" style="color: rgb(0, 125, 255);">Dr. L.K. Singh
+						</h4>
+						<p class="team-minimal-cite team-member-position">Senior Regional Psychologist</p>
+						<p class="team-minimal-text">Dr. L.K.SINGH a leading Educationist and Career-Consultant of the
+							country. He is the Founder-Director of PSYCHOLOGICAL TESTING &COUNSELLING CENTRE (PTCC)
+							kanpur and has the distinction of pioneering the clinical counseling, career counselling and
+							guidance services in India.</p>
 					</div>
 				</div>
 
 				<!-- team member 2 -->
 				<div class="team-member">
-					<div class="unit-left"><img class="img-round" src="img/Team_img/team2.png" alt="" width="150"
-							height="150">
+					<div class="unit-left"><img class="img-round team-img2" src="img/Team_img/team2.png" alt="">
 					</div>
 					<div class="unit-body">
-						<h4 class="team-minimal-title" style="color: rgb(0, 125, 255);">Mrs. Shalini Jain</h4>
-						<p class="team-minimal-cite">Psychologist and Career Counseller</p>
+						<h4 class="team-minimal-title team-member-name" style="color: rgb(0, 125, 255);">Mrs. Shalini
+							Jain</h4>
+						<p class="team-minimal-cite team-member-position">Psychologist and Career Counseller</p>
 						<p class="team-minimal-text">Mrs. Jain had comppleted her post graduation in psychology CSJM
 							University -
-							Kanpur. She had done her internship in nur-manzil hospital lucknow, under supervision on Dr.
+							Kanpur. She had done her internship in nur-manzil hospital lucknow, under supervision on
+							Dr.
 							anjali.</p>
 					</div>
 				</div>
 				<!-- team member 3 -->
 				<div class="team-member">
-					<div class="img-left"><img class="img-round" src="img/Team_img/team3.png" alt="" width="165"
-							height="150">
+					<div class="img-left"><img class="img-round team-img3" src="img/Team_img/team3.png" alt="">
 					</div>
 					<div class="unit-body">
-						<h4 class="team-minimal-title" style="color: rgb(0, 125, 255);">(CA) Vijay Kumar Gupta</h4>
-						<p class="team-minimal-cite">Founder and Director</p>
-						<p class="team-minimal-text">Dr. B is the Program Director
-							at our clinic and a licensed clinical psychologist. She provides
-							individual psychotherapy, individual and group mindfulness training,
-							and corporate mindfulness training.</p>
+						<h4 class="team-minimal-title team-member-name" style="color: rgb(0, 125, 255);">CA. Vijay Kumar
+							Gupta</h4>
+						<span class="team-minimal-cite team-member-position">Founder Director <span
+								style="display: block;">*Makers</span></span>
+
+						<p class="team-minimal-text" style="padding-top: 10px;">CA Vijay Kumar Gupta is a practicing
+							chartered accountant is having
+							a spontaneous spirit in counseling. His vision is to unearth the worthy hidden talent of
+							the
+							individual whomsoever come in the contact of the Dream Maker & Achievers.</p>
 					</div>
 				</div>
-			</div>
-		</div>
+				<!-- team member 4 -->
 
-		<!-- Counsellers Section -->
-		<div class="counsellers-container" id="counsellers" style="margin-bottom: 50px;">
-			<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
-				class="section-heading">Counsellers</h2>
-
-			<div class="select-city" style="text-align: center; margin-top: 20px;">
-				<span>Select Your
-					City :</span>
-				<select class="form-control counseller-city-list" name="city" id="city" onchange="checkCity()">
-					<option value="allahabad" id="jaipur">Allahabad</option>
-					<option value="delhi">Delhi</option>
-					<option value="gorakhpur">Gorakhpur</option>
-					<option value="kanpur" selected>Kanpur</option>
-					<option value="lukhnow">Lucknow</option>
-					<option value="lakirpur">Lakhimpur Kheri</option>
-				</select>
-			</div>
-
-			<div
-				style="margin: 20px; font-style: italic; font-size: 12px; text-decoration: underline; color: gray; text-align: center;">
-				Counsellers in
-				<span id="counsellers_city">
-					Kanpur
-				</span>
-			</div>
-			<!-- kanpur counsellers -->
-			<div class="counsellers_in_kanpur">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Kanpur/shalini-jain.png" alt="Shalini-Jain"
-						style="width: 100px; height: 121px;">
-					<h4 style="margin: 0;">Shalini Jain</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>Psychologist and Career Counseller
-					</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Just discuss once with me freely and i'll make you move on freely.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Kanpur</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
+				<div class="team-member">
+					<div class="img-left"><img class="img-round team-img4" src="img/Team_img/teamMember1.png"
+							alt="member1"></div>
+					<div class="unit-body">
+						<h4 class="team-minimal-title team-member-name" style="color: rgb(0, 125, 255);">Nivedita Goel
+						</h4>
+						<p class="team-minimal-cite team-member-position">Consultant Clinical Psychologist</p>
+						<p class="team-minimal-text">Ms. Nivedita is a trained Psychologist, Counsellor and with
+							7+
+							years of experience. She deals with issues pertaining to anxiety, mood swings, exam
+							pressure, peer pressure, careers, abusive relationships, personality disorders, etc.
+						</p>
 					</div>
 
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-				<!-- counseller 2 -->
-				<div class="card">
-					<img src="img/counseller_img/Kanpur/Dr.L.k.Singh.jpeg" alt="Dr.-L.K.Singh"
-						style="width: 100px; height: 100px;">
-					<h4 style=" margin: 0;">Dr. L.K. Singh</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						मंडली मनोविज्ञान केंद्र, कानपुर ( Retired Psychologist )</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> परामर्श और मनोवैज्ञानिक परीक्षण में विशेषज्ञता।</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Kanpur</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-				<!-- counseller 3 -->
-				<div class="card">
-					<img src="img/counseller_img/Kanpur/duruga.png" alt="John">
-					<h4 style="margin: 0;">Duruga Yadav</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Clinical Psychologist</p>
-					<p class="title" style="margin: 0; font-size: 13px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black; font-size: 15px;">About
-							:</span> Ms. Duruga is a trained psychologist counsellor, She has undertaken
-						psychological assessments for diagnosis.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Kanpur</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-
-				<!-- counseller 4 -->
-				<div class="card">
-					<img src="img/counseller_img/Kanpur/manisha.png" alt="John">
-					<h4 style="margin: 0;">Manisha Singh</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Counseller</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Working towards building a positive and emotional enviroment for one and all.
-						Mental health promoter and awareness campaigner.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Kanpur</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-
-			</div>
-			<!-- Allahabad counsellers -->
-			<div class="counsellers_in_allahabad" style="display: none;">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Allahabad/jay_sir.png" alt="John">
-					<h4 style="margin: 0;">Jay Saini</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Consultant Psychologist and psychotherapist</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> My aim is to provide a genuine, accepting, and validating approach within therapy
-						directed towards enhancing the quality of life.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Allahabad</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-
-			</div>
-			<!-- delhi counsellers -->
-			<div class="counsellers_in_delhi" style="display: none;">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Delhi/meenu_kishore.png" alt="John">
-					<h4 style="margin: 0;">Meenu Kishore</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Bureau of psychology Allahabad ( Retired Psychologist )</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Expertise in counselling and psychological testing. She is trained in various
-						psychometric assessment methods.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Delhi</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-				<!-- counseller 2 -->
-				<div class="card">
-					<img src="img/counseller_img/Delhi/vivek.png" alt="John" style="height: 115px;">
-					<h4 style="margin: 0;">Vivek Pandey</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Educational Professional Counseller in primary school</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Vivek is trained psychologist with a master in psychology. He has also conduct
-						aptitude intelligence and personality test for students.
-					</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Delhi</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
-				</div>
-
-			</div>
-			<!-- lukhnow counsellers -->
-			<div class="counsellers_in_lukhnow" style="display: none;">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Lucknow/ajay.png" alt="John">
-					<h4 style="margin: 0;">Ajay Kumar</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Psychologist & Career Counsellor</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Conducting Seminars and workshops time to time.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Lucknow</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
 				</div>
 			</div>
 
-			<!-- Lakhimpur Kheri counsellers -->
-			<div class="counsellers_in_lakhimpur" style="display: none;">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Lakhimpur-kheri/skand-chaubey.jpeg" alt="John">
-					<h4 style="margin: 0;">Skand Chaubey</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						O.S.T Counseller (DRUGS & AIDS)
-						DIST HOSPITAL KHERI </p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Conducting Seminars and workshops time to time. ( समय-समय पर सेमिनार और कार्यशालाओं
-						का आयोजन करना। )</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Lakhimpur Kheri</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
 
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
+			<!-- Counsellers Section -->
+			<div class="counsellers-container" id="counsellers" style="margin-bottom: 50px;">
+				<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
+					class="section-heading">Counsellers</h2>
+
+				<div class="select-city" style="text-align: center; margin-top: 20px;">
+					<span>Select Your
+						City :</span>
+					<select class="form-control counseller-city-list" name="city" id="city" onchange="checkCity()">
+						<option value="allahabad" id="jaipur">Allahabad</option>
+						<option value="delhi">Delhi</option>
+						<option value="gorakhpur">Gorakhpur</option>
+						<option value="jaunpur">Jaunpur</option>
+						<option value="kanpur" selected>Kanpur</option>
+						<option value="lukhnow">Lucknow</option>
+						<option value="lakirpur">Lakhimpur Kheri</option>
+
+					</select>
 				</div>
-			</div>
 
-			<!-- Gorakhpur counsellers -->
-			<div class="counsellers_in_gorakhpur" style="display: none;">
-				<!-- counseller 1 -->
-				<div class="card">
-					<img src="img/counseller_img/Gorakhpur/sharan_ojha.png" alt="John">
-					<h4 style="margin: 0;">Hari Sharan Ojha</h4>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
-						<span style="font-weight: bold; color: black; ">Position :
-						</span>
-						Bureau of psychology Gorakhpur ( Retired Psychologist )</p>
-					<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
-						<span style="font-weight: bold; color: black;">About
-							:</span> Expertise in counselling and psychological testing.</p>
-					<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
-							style="font-weight: bold;">City
-							:</span> Gorakhpur</p>
-					<div>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i
-								class="fa  fa-facebook-official"></i></a>
-						<a href="#" style="margin-right: 7px; font-size: 19px;"><i class="fa fa-whatsapp"></i></a>
-						<a href="#" style="font-size: 19px;"><i class="fa fa-youtube-play"></i></a>
-					</div>
-
-					<p style="margin: 5px 0 0 0;">
-						<a class="button" href="tel:+918957561713">
-							Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
-						</a>
-					</p>
+				<div
+					style="margin: 20px; font-size: 12px; text-decoration: underline; color: gray; text-align: center;">
+					Counsellers in
+					<span id="counsellers_city">
+						Kanpur
+					</span>
 				</div>
-			</div>
-		</div>
+				<!-- kanpur counsellers -->
+				<div class="counsellers_in_kanpur">
+					<!-- counseller 1 -->
+					<!-- <div class="card">
+						<img src="img/counseller_img/Kanpur/Dr.L.K.Singh.png" alt="Dr.-L.K.Singh"
+							style="width: 100px; height: 100px;">
+						<h4 style=" margin: 0;">Dr. L.K. Singh</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Regional Psychologist</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>36 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> परामर्श और मनोवैज्ञानिक परीक्षण में विशेषज्ञता।</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Kanpur</p>
+						<div>
+						</div>
 
-		<!-- Testimonial Section -->
-		<div class="testimonial-container" id="testimonials">
-			<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
-				class="section-heading">Testimonial</h2>
-
-			<div class="testimonial-box">
-				<img src="img/testimonial_img/boy.png" alt="Avatar" style="width:90px">
-				<span>Name</span>
-				<p>Position</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit libero et qui delectus
-					voluptas beatae minus alias numquam animi? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					A, dignissimos?</p>
-			</div>
-
-			<div class="testimonial-box">
-				<img src="img/testimonial_img/girl.png" alt="Avatar" style="width:90px">
-				<span>Name</span>
-				<p>Position</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit libero et qui delectus
-					voluptas beatae minus alias numquam animi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Officia, culpa!</p>
-			</div>
-		</div>
-
-		<!-- REVIEW: Contact Section -->
-		<div id="contact" style="margin-bottom: 50px;" class="contact-container">
-			<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
-				class="contact-heading section-heading">Book An Appointment</h2>
-
-			<!-- form section -->
-			<div class="container form-container">
-				<!-- <h2 class="fillForm">Fill The Form :</h2> -->
-				<form class="myForm" id="form">
-					<div class="form-group">
-						<label for="firstName">First Name <span class="asterisk" style="color: darkgreen;"><b>*</b>
-							</span></label>
-						<input type="text" class="form-control" id="firstName" placeholder="Enter First Name"
-							name="firstName" required />
-					</div>
-					<div class="form-group">
-						<label for="lastName">Last Name <span class="asterisk"
-								style="color: darkgreen;"><b>*</b></span></label>
-						<input type="text" class="form-control" id="lastName" placeholder="Enter Last Name"
-							name="lastName" required />
-					</div>
-					<div class="form-group">
-						<label for="email">Email :</label>
-						<input type="email" name="email" class="form-control" id="email"
-							placeholder="Enter Your Email ( Optional )">
-					</div>
-					<div class="form-group">
-						<label for="mobile">Phone No <span class="asterisk"
-								style="color: darkgreen;"><b>*</b></span></label>
-						<input type="tel" maxlength="14" class="form-control" id="mobile"
-							placeholder="Ex. +91 0123456789" name="phone" required />
-					</div>
-					<div class="form-group">
-						<label for="address">Address :</label>
-						<input type="text" class="form-control" id="address" placeholder="Your Address ( Optional )"
-							name="address" />
-					</div>
-					<div class="form-group">
-						<label for="question">Ask Your Question :</label>
-						<input type="text" id="question" class="form-control"
-							placeholder="If you have any question ( Optional )" name="subject">
-					</div>
-					<div class="form-group">
-						<label for="message">Message :</label>
-						<textarea name="message" class="form-control" id="message" cols="30" rows="10"
-							placeholder="Describe here ..! ( If you have any doubts )"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary form-submit-btn" id="sbmt">
-						<b>Submit Now</b>
-					</button>
-				</form>
-			</div>
-
-			<!-- show alert when submit -->
-			<div class="alert alert-warning alert-dismissible fade show submit-box-alert" role="alert"
-				style="position: fixed; z-index: 300; top: 0;">
-				<div class="alert-inner-text">
-					<strong>"Thank you!!!</strong> for contacting us!, You will hear back within 6-12 hours."
-				</div>
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true" style="color: rgb(0, 0, 0);">&times;</span>
-				</button>
-
-			</div>
-			<!-- form section end -->
-		</div>
-
-		<!--REVIEW: Footer Section -->
-		<div class="footer-container">
-			<!-- map container -->
-			<div class="map-container">
-				<h5 style="color: white; margin: 1%;">Reach us ( click on google map )</h5>
-				<a href="https://www.google.com/maps/place/Dream+Makers+%26+Achiver/@26.4658177,80.3559649,17z/data=!3m1!4b1!4m5!3m4!1s0x399c4756e7ee2bbd:0x29dda744961b9898!8m2!3d26.4658177!4d80.3581536"
-					target="_blank">
-					<img src="img/map/map2.webp" alt="google map" class="google-map" title="click to open google map">
-				</a>
-			</div>
-			<!-- End of map container -->
-
-			<div class="info-container">
-				<!-- contact-information -->
-				<div class="contact-info-container">
-					<h5 class="info-heading">Contact Information</h5>
-					<ul style="list-style: none;">
-
-						<li class="contact-link contact-link-address">
-							<a href="https://www.google.co.in/maps/place/Kalpana+Plaza/@26.4651521,80.3588375,17z/data=!4m8!1m2!2m1!1sKalpana+Plaza+3rd+Floor+-+Birhana+Road,+Kanpur!3m4!1s0x0:0xc3fcf6fe49e57df6!8m2!3d26.4654377!4d80.3584443"
-								target="_blank" class="contact-info-link" title="click to open 'google map'"
-								style="display: inline-flex;">
-								<i class="mdi mdi-map-marker"
-									style="font-size: 24px; color: rgb(0, 130, 221); display: inline-block; position: relative; top: 3px;"></i>
-								<div class="footer-phone" style="padding-left: 11px;">
-									<span>314, Kalpana Plaza 3rd Floor -
-										24/147, Birhana Road, Kanpur 01</span>
-									<!-- <span style="display: block; padding-left: 40px;">208001 IND</span> -->
-								</div>
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+919415948872">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
 							</a>
-						</li>
+						</p>
+					</div> -->
+					<!-- counseller 2 -->
+					<div class="card">
+						<img src="img/counseller_img/Kanpur/shalini-jain.png" alt="Shalini-Jain"
+							style="width: 100px; height: 121px;">
+						<h4 style="margin: 0;">Shalini Jain</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>Psychologist and Career Counseller
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>8 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Just discuss once with me freely and i'll make you move on freely.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Kanpur</p>
+						<div>
 
-						<li class="contact-link">
-							<a href="tel:+918957561713" class="contact-info-link" title="Make a call">
-								<i class="mdi mdi-phone"
-									style="font-size: 24px; color: rgb(0, 130, 221); position: relative; top: 3px;"></i>
-								<span style="padding-left: 10px;">+918957561713</span>
-							</a></li>
+						</div>
 
-						<li class="contact-link">
-							<a href="https://mail.google.com/mail/?view=cm&fs=1&to=dreammakersachievers@gmail.com&su=SUBJECT&body=BODY"
-								target="_blank" class="contact-info-link" title="open gmail">
-								<i class="mdi mdi-email-outline"
-									style="font-size: 24px; color: rgb(0, 130, 221); position: relative; top: 3px;"></i>
-								<span style="padding-left: 10px;">dreammakersachievers@gmail.com</span>
-							</a></li>
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
 
-						<!-- Social Links -->
-						<li class="contact-link" style="display: inline-block;">
-							<!-- facebook -->
-							<a href="https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/" target="_blank"
-								class="contact-info-link "><i class="mdi mdi-facebook social-link"
-									style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128);"></i></a>
-						</li>
+					<!-- counseller 3 -->
+					<div class="card">
+						<img src="img/counseller_img/Kanpur/duruga.png" alt="John">
+						<h4 style="margin: 0;">Duruga Yadav</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Clinical Psychologist</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>5 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 13px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black; font-size: 15px;">About
+								:</span> Ms. Duruga is a trained psychologist counsellor, She has undertaken
+							psychological assessments for diagnosis.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Kanpur</p>
+						<div>
 
-						<li style="display: inline-block;">
-							<!-- instagram -->
-							<a href="#" class="contact-info-link "><i class="mdi mdi-instagram social-link"
-									style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
-						</li>
+						</div>
 
-						<li style="display: inline-block;">
-							<!-- whatsApp -->
-							<a href="https://api.whatsapp.com/send?phone=918957561713&text=is%20any%20one%20there%20?"
-								target="_blank" class="contact-info-link "><i class="mdi mdi-whatsapp social-link"
-									style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
-						</li>
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
 
-						<li style="display: inline-block;">
-							<!-- youtube -->
-							<a href="https://www.youtube.com/channel/UCjntv6quWJs7i4S6NPWgUEg" target="_blank"
-								class="contact-info-link "><i class="mdi mdi-youtube-play social-link"
-									style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
-						</li>
-						<!-- Phone -->
-						<li style="display: inline-block;">
-							<a href="tel:+918957561713" class="contact-info-link "><i class="mdi mdi-phone social-link"
-									style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
-						</li>
-					</ul>
+					<!-- counseller 4 -->
+					<div class="card">
+						<img src="img/counseller_img/Kanpur/manisha.png" alt="John">
+						<h4 style="margin: 0;">Manisha Singh</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Counselling Psychologist</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span> 1 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Working towards building a positive and emotional enviroment for one and all.
+							Mental health promoter and awareness campaigner.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Kanpur</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+
 				</div>
-				<!-- end of contact information -->
+				<!-- Allahabad counsellers -->
+				<div class="counsellers_in_allahabad" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Allahabad/jay_sir.png" alt="John">
+						<h4 style="margin: 0;">Jay Saini</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Consultant Psychologist and psychotherapist</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span> 19 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> My aim is to provide a genuine, accepting, and validating approach within
+							therapy
+							directed towards enhancing the quality of life.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Allahabad</p>
+						<div>
 
-				<!-- quick link container -->
-				<div class="quick-link-container">
-					<h5 class="info-heading">Quick Links</h5>
-					<ul style="list-style: none;">
-						<li class="quick-links">
-							<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+
+				</div>
+				<!-- delhi counsellers -->
+				<div class="counsellers_in_delhi" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Delhi/meenu_kishore.png" alt="John">
+						<h4 style="margin: 0;">Meenu Kishore</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>Retired Senior Psychologist,
+							Bureau of psychology Allahabad.</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>42 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Expertise in counselling and psychological testing. She is trained in various
+							psychometric assessment methods.</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Address :
+							</span>76/161
+						</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Delhi</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+919450580267">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+					<!-- counseller 2 -->
+					<div class="card">
+						<img src="img/counseller_img/Delhi/vivek.png" alt="John" style="height: 115px;">
+						<h4 style="margin: 0;">Vivek Pandey</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Educational Vocational Counseller in primary school</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span> 5 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Vivek is trained clinical psychologist with a master in psychology. He has also
+							conduct
+							aptitude intelligence and personality test for students.
+						</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Delhi</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+
+				</div>
+				<!-- lukhnow counsellers -->
+				<div class="counsellers_in_lukhnow" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Lucknow/ajay.png" alt="John">
+						<h4 style="margin: 0;">Ajay Kumar</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Psychologist & Career Counsellor</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span> 5 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Conducting Seminars and workshops time to time.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Lucknow</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Lakhimpur Kheri counsellers -->
+				<div class="counsellers_in_lakhimpur" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Lakhimpur-kheri/skand.jpeg" alt="John">
+						<h4 style="margin: 0;">Skand Chaubey</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							O.S.T Counseller (DRUGS & AIDS)
+							DIST HOSPITAL KHERI </p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span> 1 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> M.A. (psychology) with yoga expertise, counseller of HIV, drugs and substance
+							abuse
+							in clinical setting.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Lakhimpur Kheri</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+918957561713">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Gorakhpur counsellers -->
+				<div class="counsellers_in_gorakhpur" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Gorakhpur/sharan_ojha.png" alt="John">
+						<h4 style="margin: 0;">Hari Sharan Ojha</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>
+							Bureau of psychology Gorakhpur Mandal ( Retired Psychologist )</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>41 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> Expertise in counselling and psychological testing.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Gorakhpur</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+919079211812">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- jaunpur counsellers -->
+				<div class="counsellers_in_jaunpur" style="display: none;">
+					<!-- counseller 1 -->
+					<div class="card">
+						<img src="img/counseller_img/Jaunpur/manoj.png" alt="John" style="height: 100px;">
+						<h4 style="margin: 0;">Dr. Manoj kumar Pandey</h4>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Position :
+							</span>Assistant Professor, Department of Applied Psychology, Veer Bahadur Singh Purvanchal
+							University Jaunpur, Uttar Pradesh
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 5px 10px;">
+							<span style="font-weight: bold; color: black; ">Experience :
+							</span>41 Years
+						</p>
+						<p class="title" style="margin: 0; font-size: 15px; text-align: left; padding: 0 10px;">
+							<span style="font-weight: bold; color: black;">About
+								:</span> I have an experience of vocational and career guidance and counseling, academic
+							underachievement, low Self Confidence, merital counseling and personality development.</p>
+						<p style="margin: 0; text-align: left; padding: 5px 10px; font-size: 15px;"><span
+								style="font-weight: bold;">City
+								:</span> Jaunpur</p>
+						<div>
+
+						</div>
+
+						<p style="margin: 5px 0 0 0;">
+							<a class="button" href="tel:+917007978543">
+								Call &nbsp;<span class="mdi mdi-phone-in-talk"></span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial Section -->
+			<div class="testimonial-container" id="testimonials">
+				<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
+					class="section-heading">Success Stories</h2>
+
+				<div class="testimonial-box">
+					<img src="img/testimonial_img/boy.png" alt="Avatar" style="width:90px">
+					<span>Name</span>
+					<p>Position</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit libero et qui delectus
+						voluptas beatae minus alias numquam animi? Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit.
+						A, dignissimos?</p>
+				</div>
+
+				<div class="testimonial-box">
+					<img src="img/testimonial_img/girl.png" alt="Avatar" style="width:90px">
+					<span>Name</span>
+					<p>Position</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit libero et qui delectus
+						voluptas beatae minus alias numquam animi? Lorem ipsum dolor sit amet consectetur adipisicing
+						elit.
+						Officia, culpa!</p>
+				</div>
+			</div>
+
+			<!-- Gallery Section -->
+
+			<div class="gallery-container" style="margin-bottom: 50px;">
+				<h2
+					style="text-align:center; font-size: 32px; font-weight: 900; line-height: 38.66px; margin-bottom: 30px;">
+					Gallery</h2>
+
+
+				<div class="galleria" id="gallery">
+					<img src="img/gallery_img/event_img2.jpeg" alt="">
+					<img src="img/gallery_img/event_img1.jpeg" alt="">
+					<img src="img/gallery_img/event_img3.jpeg" alt="">
+					<img src="img/gallery_img/event_img4.jpeg" alt="">
+					<img src="img/gallery_img/event_img5.jpeg" alt="">
+				</div>
+			</div>
+
+
+
+			<!-- REVIEW: Contact Section -->
+			<div id="contact" style="margin-bottom: 50px;" class="contact-container">
+				<h2 style="text-align: center; font-size: 32px; font-weight: 900; line-height: 38.66px;"
+					class="contact-heading section-heading">Book An Appointment</h2>
+
+				<!-- form section -->
+				<div class="container form-container">
+					<!-- <h2 class="fillForm">Fill The Form :</h2> -->
+					<form class="myForm" id="form">
+						<div class="form-group firstName" style="display: inline-block;">
+							<label for="firstName">First Name <span class="asterisk" style="color: darkgreen;"><b>*</b>
+								</span></label>
+							<input type="text" class="form-control" id="firstName" placeholder="Enter First Name"
+								name="firstName" required />
+						</div>
+						<div class="form-group lastName" style="display: inline-block;">
+							<label for="lastName">Last Name <span class="asterisk"
+									style="color: darkgreen;"><b>*</b></span></label>
+							<input type="text" class="form-control" id="lastName" placeholder="Enter Last Name"
+								name="lastName" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email :</label>
+							<input type="email" name="email" class="form-control" id="email"
+								placeholder="Enter Your Email ( Optional )">
+						</div>
+						<div class="form-group">
+							<label for="mobile">Phone No <span class="asterisk"
+									style="color: darkgreen;"><b>*</b></span></label>
+							<input type="tel" maxlength="14" class="form-control" id="mobile"
+								placeholder="Ex. +91 0123456789" name="phone" required />
+						</div>
+						<div class="form-group">
+							<label for="address">Address :</label>
+							<input type="text" class="form-control" id="address" placeholder="Your Address ( Optional )"
+								name="address" />
+						</div>
+						<div class="form-group">
+							<label for="question">Ask Your Question :</label>
+							<input type="text" id="question" class="form-control"
+								placeholder="If you have any question ( Optional )" name="subject">
+						</div>
+						<div class="form-group">
+							<label for="message">Message :</label>
+							<textarea name="message" class="form-control" id="message" cols="30" rows="10"
+								placeholder="Describe here ..! ( If you have any doubts )"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary form-submit-btn" id="sbmt">
+							<b>Submit Now</b>
+						</button>
+					</form>
+				</div>
+
+				<!-- show alert when submit -->
+				<div class="alert alert-warning alert-dismissible fade show submit-box-alert" role="alert"
+					style="position: fixed; z-index: 300; top: 0;">
+					<div class="alert-inner-text">
+						<strong>"Thank you!!!</strong> for contacting us!, You will hear back within 6-12 hours."
+					</div>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true" style="color: rgb(0, 0, 0);">&times;</span>
+					</button>
+
+				</div>
+				<!-- form section end -->
+			</div>
+
+			<!--REVIEW: Footer Section -->
+			<div class="footer-container">
+				<!-- map container -->
+				<div class="map-container">
+					<h5 style="color: white; margin: 1%;">Reach us ( click on google map )</h5>
+					<a href="https://www.google.com/maps/place/Dream+Makers+%26+Achiver/@26.4658177,80.3559649,17z/data=!3m1!4b1!4m5!3m4!1s0x399c4756e7ee2bbd:0x29dda744961b9898!8m2!3d26.4658177!4d80.3581536"
+						target="_blank">
+						<img src="img/map/map2.webp" alt="google map" class="google-map"
+							title="click to open google map">
+					</a>
+				</div>
+				<!-- End of map container -->
+
+				<div class="info-container">
+					<!-- contact-information -->
+					<div class="contact-info-container">
+						<h5 class="info-heading">Contact Information</h5>
+						<ul style="list-style: none;">
+
+							<li class="contact-link contact-link-address">
+								<a href="https://www.google.co.in/maps/place/Kalpana+Plaza/@26.4651521,80.3588375,17z/data=!4m8!1m2!2m1!1sKalpana+Plaza+3rd+Floor+-+Birhana+Road,+Kanpur!3m4!1s0x0:0xc3fcf6fe49e57df6!8m2!3d26.4654377!4d80.3584443"
+									target="_blank" class="contact-info-link" title="click to open 'google map'"
+									style="display: inline-flex;">
+									<i class="mdi mdi-map-marker"
+										style="font-size: 24px; color: rgb(0, 130, 221); display: inline-block; position: relative; top: 3px;"></i>
+									<div class="footer-phone" style="padding-left: 11px;">
+										<span>314, Kalpana Plaza 3rd Floor -
+											24/147, Birhana Road, Kanpur 01</span>
+										<!-- <span style="display: block; padding-left: 40px;">208001 IND</span> -->
+									</div>
+								</a>
+							</li>
+
+							<li class="contact-link">
+								<a href="tel:+918957561713" class="contact-info-link" title="Make a call">
+									<i class="mdi mdi-phone"
+										style="font-size: 24px; color: rgb(0, 130, 221); position: relative; top: 3px;"></i>
+									<span style="padding-left: 10px;">+918957561713</span>
+								</a></li>
+
+							<li class="contact-link">
+								<a href="https://mail.google.com/mail/?view=cm&fs=1&to=dreammakersachievers@gmail.com&su=SUBJECT&body=BODY"
+									target="_blank" class="contact-info-link" title="open gmail">
+									<i class="mdi mdi-email-outline"
+										style="font-size: 24px; color: rgb(0, 130, 221); position: relative; top: 3px;"></i>
+									<span style="padding-left: 10px;">dreammakersachievers@gmail.com</span>
+								</a></li>
+
+							<!-- Social Links -->
+							<li class="contact-link" style="display: inline-block;">
+								<!-- facebook -->
+								<a href="https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/"
+									target="_blank" class="contact-info-link "><i class="mdi mdi-facebook social-link"
+										style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128);"></i></a>
+							</li>
+
+							<li style="display: inline-block;">
+								<!-- instagram -->
+								<a href="#" class="contact-info-link "><i class="mdi mdi-instagram social-link"
+										style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
+							</li>
+
+							<li style="display: inline-block;">
+								<!-- whatsApp -->
+								<a href="https://api.whatsapp.com/send?phone=918957561713&text=is%20any%20one%20there%20?"
+									target="_blank" class="contact-info-link "><i class="mdi mdi-whatsapp social-link"
+										style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
+							</li>
+
+							<li style="display: inline-block;">
+								<!-- youtube -->
+								<a href="https://www.youtube.com/channel/UCjntv6quWJs7i4S6NPWgUEg" target="_blank"
+									class="contact-info-link "><i class="mdi mdi-youtube-play social-link"
+										style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
+							</li>
+							<!-- Phone -->
+							<li style="display: inline-block;">
+								<a href="tel:+918957561713" class="contact-info-link "><i
+										class="mdi mdi-phone social-link"
+										style="font-size: 24px; line-height: 20px; color: rgb(128, 128, 128); margin-left: 11px;"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- end of contact information -->
+
+					<!-- quick link container -->
+					<div class="quick-link-container">
+						<h5 class="info-heading">Quick Links</h5>
+						<ul style="list-style: none;">
+							<li class="quick-links">
+								<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
 							 top: 1px;"></i>
-							<a href="#about" class="quick-hyper-links">About</a>
-						</li>
+								<a href="#about" class="quick-hyper-links">About</a>
+							</li>
 
-						<li class="quick-links">
-							<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
+							<li class="quick-links">
+								<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
 								 top: 1px;"></i>
-							<a href="#services" class="quick-hyper-links">Services</a>
-						</li>
+								<a href="#services" class="quick-hyper-links">Services</a>
+							</li>
 
-						<li class="quick-links">
-							<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
+							<li class="quick-links">
+								<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
 									 top: 1px;"></i>
-							<a href="#team" class="quick-hyper-links">Our Team</a>
-						</li>
+								<a href="#team" class="quick-hyper-links">Our Team</a>
+							</li>
 
-						<li class="quick-links">
-							<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
+							<li class="quick-links">
+								<i class="mdi mdi-chevron-right" style="color: rgb(162, 162, 162); margin-right: 11px; font-size: 18px; position: relative;
 										 top: 1px;"></i>
-							<a href="#contact" class="quick-hyper-links">Contact</a>
-						</li>
+								<a href="#contact" class="quick-hyper-links">Contact</a>
+							</li>
 
-					</ul>
+						</ul>
+					</div>
+					<!-- End of quick link container -->
+
+					<!-- therapies container -->
+					<div class="therapie-container">
+						<h5 class="info-heading">Therapies</h5>
+						<ul style="list-style: none;">
+							<li class="therapy-link">
+								<img src="img/Therapies-svg-icons/senior.svg"
+									style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px; color: rgb(255, 255, 255) !important;"
+									alt="senior therapie">
+								<a href="#senior-therapy" class="therapy-hyper-link">Therapy for Seniors</a>
+							</li>
+
+							<li class="therapy-link">
+								<img src="img/Therapies-svg-icons/couple.svg"
+									style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+									alt="senior therapie">
+								<a href="#couple-therapy" class="therapy-hyper-link">Therapy for Couples</a>
+							</li>
+							<li class="therapy-link">
+								<img src="img/Therapies-svg-icons/individual.webp"
+									style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+									alt="senior therapie">
+								<a href="#individual-therapy" class="therapy-hyper-link">Individual Therapy</a>
+							</li>
+							<li class="therapy-link">
+								<img src="img/Therapies-svg-icons/child.svg"
+									style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
+									alt="senior therapie">
+								<a href="#child-therapy" class="therapy-hyper-link">Therapy for Childrens</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End of therapies container -->
 				</div>
-				<!-- End of quick link container -->
 
-				<!-- therapies container -->
-				<div class="therapie-container">
-					<h5 class="info-heading">Therapies</h5>
-					<ul style="list-style: none;">
-						<li class="therapy-link">
-							<img src="img/Therapies-svg-icons/senior.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
-								alt="senior therapie">
-							<a href="#senior-therapy" class="therapy-hyper-link">Therapy for Seniors</a>
-						</li>
-
-						<li class="therapy-link">
-							<img src="img/Therapies-svg-icons/couple.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
-								alt="senior therapie">
-							<a href="#couple-therapy" class="therapy-hyper-link">Therapy for Couples</a>
-						</li>
-						<li class="therapy-link">
-							<img src="img/Therapies-svg-icons/individual.webp"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
-								alt="senior therapie">
-							<a href="#individual-therapy" class="therapy-hyper-link">Individual Therapy</a>
-						</li>
-						<li class="therapy-link">
-							<img src="img/Therapies-svg-icons/child.svg"
-								style="width: 24px; background-color: rgb(255, 255, 255); margin-right: 11px;"
-								alt="senior therapie">
-							<a href="#child-therapy" class="therapy-hyper-link">Therapy for Childrens</a>
-						</li>
-					</ul>
+				<!-- copyright section -->
+				<div class="copyright-container">
+					<p class="copyright">© 2019 All Rights Reserved.</p>
 				</div>
-				<!-- End of therapies container -->
-			</div>
 
-			<!-- copyright section -->
-			<div class="copyright-container">
-				<p class="copyright">© 2019 All Rights Reserved.</p>
-			</div>
+				<!-- End of copyright section -->
 
-			<!-- End of copyright section -->
+			</div>
+			<!--End of foooter section -->
 
 		</div>
-		<!--End of foooter section -->
+
+		<!--REVIEW: fixed social links right side -->
+		<div class="socialLinks-container">
+			<!-- phone call -->
+			<a href="tel:+918957561713">
+				<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/calling.webp"
+					alt="" class="phone" title="Career Helpline: +918957561713">
+			</a>
+			<!-- facebook -->
+			<a href="fb://facewebmodal/f?href=https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/">
+				<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/facebook.webp"
+					alt="" class="facebook" title="Facebook Page">
+			</a>
+			<!-- whatsApp -->
+			<a href="https://api.whatsapp.com/send?phone=918957561713&text=is%20any%20one%20there%20?" target="_blank">
+				<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/whatsApp.webp"
+					alt="" class="whatsapp" title="Chat on whatsApp">
+			</a>
+			<!-- youtube -->
+			<a href="https://www.youtube.com/channel/UCjntv6quWJs7i4S6NPWgUEg" target="_blank">
+				<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/youtube.webp"
+					alt="" class="youtube" title="Youtube Channel">
+			</a>
+
+		</div>
+
+		<!--REVIEW: go top icon -->
+		<a href="#home" class="go-top">
+			<i class="mdi mdi-chevron-double-up go-top-svg" style="padding: 7px;"></i>
+		</a>
+
+		<!-- End of fixed social links right side -->
 
 	</div>
-
-	<!--REVIEW: fixed social links right side -->
-	<div class="socialLinks-container">
-		<!-- phone call -->
-		<a href="tel:+918957561713">
-			<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/calling.webp"
-				alt="" class="phone" title="Career Helpline: +918957561713">
-		</a>
-		<!-- facebook -->
-		<a href="fb://facewebmodal/f?href=https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/">
-			<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/facebook.webp"
-				alt="" class="facebook" title="Facebook Page">
-		</a>
-		<!-- whatsApp -->
-		<a href="https://api.whatsapp.com/send?phone=918957561713&text=is%20any%20one%20there%20?" target="_blank">
-			<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/whatsApp.webp"
-				alt="" class="whatsapp" title="Chat on whatsApp">
-		</a>
-		<!-- youtube -->
-		<a href="https://www.youtube.com/channel/UCjntv6quWJs7i4S6NPWgUEg" target="_blank">
-			<img src="https://raw.githubusercontent.com/sj-world/dream-makers-achievers/master/img/social_icons/youtube.webp"
-				alt="" class="youtube" title="Youtube Channel">
-		</a>
-
-	</div>
-
-	<!--REVIEW: go top icon -->
-	<a href="#home" class="go-top">
-		<i class="mdi mdi-chevron-double-up go-top-svg" style="padding: 7px;"></i>
-	</a>
-
-	<!-- End of fixed social links right side -->
 
 	<!-- REVIEW: JS Files -->
 	<!-- video framework js -->
@@ -1228,11 +1359,9 @@
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
 
-
 	<!-- Google CDN Jquery & Ajax -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 	</script>
-
 
 	<!-- popper js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -1244,6 +1373,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
+
+	<!-- Galleria -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 
 	<!-- Local JS  -->
 	<script src="assets/js/script.js"></script>

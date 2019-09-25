@@ -390,7 +390,60 @@ function checkCity() {
     } else {
         counsellers_in_gorakhpur.style.display = "none";
     }
+    // If Gorakhpur
+    const counsellers_in_jaunpur = document.querySelector('.counsellers_in_jaunpur');
+    if (x.options[cityName].text == 'Jaunpur') {
+        counsellers_in_jaunpur.style.display = "block";
+    } else {
+        counsellers_in_jaunpur.style.display = "none";
+    }
 }
+
+// Gallery framework
+
+(function () {
+    Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria', {
+        // transition: 'fade',
+        imageCrop: true,
+        autoplay: 10000,
+        // lightbox: true,
+        queue: false,
+        responsive: true,
+        variation: 'light'
+    });
+}());
+
+// WhatsApp Share
+
+// waShBtn = function () {
+//     if (this.isIos === true) {
+//         var b = [].slice.call(document.querySelectorAll(".wa_btn"));
+//         for (var i = 0; i < b.length; i++) {
+//             var t = b[i].getAttribute("data-text");
+//             var u = b[i].getAttribute("data-href");
+//             var o = b[i].getAttribute("href");
+//             var at = "?text=" + encodeURIComponent(t);
+//             if (t) {
+//                 at += "%20%0A";
+//             }
+//             if (u) {
+//                 at += encodeURIComponent(u);
+//             } else {
+//                 at += encodeURIComponent(document.URL);
+//             }
+//             b[i].setAttribute("href", o + at);
+//             b[i].setAttribute("target", "_top");
+//             b[i].setAttribute("target", "_top");
+//             b[i].className += ' activeWhatsapp';
+//         }
+//     }
+// }
+
+// waShBtn.prototype.isIos = ((navigator.userAgent.match(/Android|iPhone/i) && !navigator.userAgent.match(/iPod|iPad/i)) ? true : false);
+
+// var theWaShBtn = new waShBtn();
+// WhatsApp Share End
 
 checkMobileSize(mobileScreenSize);
 mobileScreenSize.addListener(checkMobileSize);

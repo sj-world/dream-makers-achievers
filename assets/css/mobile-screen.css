@@ -30,6 +30,7 @@
         border-bottom: 2px ridge rgb(1, 129, 172);
         padding: 8px 0;
         text-align: center;
+        margin: 0 !important;
     }
     .top-sticky-header nav ul li a {
         /* font-size: 13px; */
@@ -284,11 +285,14 @@
     }
     /* REVIEW: Team Section */
     .team-container {
-        width: 85%;
-        margin: 0 auto;
+        flex-direction: column;
+        max-width: 87% !important;
+        width: 87%;
+        margin: 0 auto !important;
     }
     .team-member {
-        margin-bottom: 50px;
+        max-width: 100% !important;
+        margin-bottom: 25px;
     }
     .team-heading {
         padding-bottom: 25px;
@@ -307,6 +311,15 @@
     }
     .contact-heading {
         margin-bottom: 25px;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .firstName {
+        width: 100%;
+    }
+    .lastName {
+        width: 100%;
     }
     /* Program Section */
     .program-heading {
@@ -332,5 +345,10 @@
     .testimonial-container {
         width: 84%;
         margin: 0 auto;
+    }
+    /* Gallery Section */
+    .galleria {
+        width: 91%;
+        height: 300px;
     }
 }

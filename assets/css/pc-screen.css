@@ -227,16 +227,4 @@
         margin-top: 25px;
         margin-bottom: 50px !important;
     }
-    /* REVIEW: Team Section */
-    .team-container {
-        margin-top: 60px !important;
-        margin-bottom: 120px !important;
-        width: 91%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .team-member {
-        width: 30%;
-    }
 }
