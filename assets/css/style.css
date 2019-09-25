@@ -1,5 +1,8 @@
 /* REVIEW: Default Styling */
 
+/* Font Family */
+
+@import url('https://rsms.me/inter/inter.css');
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
