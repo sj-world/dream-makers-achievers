@@ -118,21 +118,45 @@ if (pcScreenSize.matches) {
     })
 }
 
+// eBooks Email Submission
+
+const eBooksMailForm = document.querySelector('#eBooksMail');
+eBooksMailForm.addEventListener('submit', function (e) {
+    PostToEbooksDataBase();
+    e.preventDefault();    //stop form from submitting default
+    e.target.eBooksEmailInput.value = '';
+
+    // alert box after form submission
+    alert('Thank You for Mailing us 😄 All eBooks will be send to your email within 12 hours!')
+})
+
+function PostToEbooksDataBase() {
+    const eBooksEmailInput = $("#eBooksEmailInput").val();
+
+    $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSfDDXseSzx8xV8R_zip-_cAYMFOus98K45cfN_mjjh-mler_Q/formResponse",
+        data: { "emailAddress": eBooksEmailInput, },
+        type: "POST",
+        dataType: "xml",
+    });
+    return;
+}
+
 // REVIEW: Form submission using ajax
 
 function postToDataBase() {
 
-    var field1 = $("#firstName").val();
-    var field2 = $("#lastName").val();
-    var field3 = $("#mobile").val();
-    var field4 = $("#question").val();
-    var field5 = $("#message").val();
-    var field6 = $("#email").val();
-    var field7 = $("#address").val();
+    var firstName = $("#firstName").val();
+    var lastName = $("#lastName").val();
+    var mobile = $("#mobile").val();
+    var question = $("#question").val();
+    var message = $("#message").val();
+    var email = $("#email").val();
+    var address = $("#address").val();
 
     $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLScxFD1DDFzIOfxt4TVJNbcNBGxrItc7vho4cpz_CaQ3D2cZbA/formResponse",
-        data: { "entry.1154047464": field1, "entry.2068507921": field2, "entry.1825414465": field3, "entry.479585436": field4, "entry.479585436": field5, "entry.1229940529": field6, "entry.1192885676": field7 },
+        data: { "entry.1154047464": firstName, "entry.2068507921": lastName, "entry.1825414465": mobile, "entry.479585436": question, "entry.479585436": message, "entry.1229940529": email, "entry.1192885676": address },
         type: "POST",
         dataType: "xml",
         // success: function () {
@@ -208,8 +232,11 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 0,
     centeredSlides: true,
     loop: false,
+    speed: 1000,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
     autoplay: {
-        delay: 4000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -404,11 +431,11 @@ function checkCity() {
 (function () {
     Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
     Galleria.run('.galleria', {
-        // transition: 'fade',
+        transition: 'fade',
         imageCrop: true,
-        autoplay: 10000,
-        // lightbox: true,
-        queue: false,
+        autoplay: 8000,
+        lightbox: true,
+        queue: true,
         responsive: true,
         variation: 'light'
     });
@@ -416,34 +443,99 @@ function checkCity() {
 
 // WhatsApp Share
 
-// waShBtn = function () {
-//     if (this.isIos === true) {
-//         var b = [].slice.call(document.querySelectorAll(".wa_btn"));
-//         for (var i = 0; i < b.length; i++) {
-//             var t = b[i].getAttribute("data-text");
-//             var u = b[i].getAttribute("data-href");
-//             var o = b[i].getAttribute("href");
-//             var at = "?text=" + encodeURIComponent(t);
-//             if (t) {
-//                 at += "%20%0A";
-//             }
-//             if (u) {
-//                 at += encodeURIComponent(u);
-//             } else {
-//                 at += encodeURIComponent(document.URL);
-//             }
-//             b[i].setAttribute("href", o + at);
-//             b[i].setAttribute("target", "_top");
-//             b[i].setAttribute("target", "_top");
-//             b[i].className += ' activeWhatsapp';
-//         }
-//     }
-// }
+waShBtn = function () {
+    if (this.isIos === true) {
+        var b = [].slice.call(document.querySelectorAll(".wa_btn"));
+        for (var i = 0; i < b.length; i++) {
+            var t = b[i].getAttribute("data-text");
+            var u = b[i].getAttribute("data-href");
+            var o = b[i].getAttribute("href");
+            var at = "?text=" + encodeURIComponent(t);
+            if (t) {
+                at += "%20%0A";
+            }
+            if (u) {
+                at += encodeURIComponent(u);
+            } else {
+                at += encodeURIComponent(document.URL);
+            }
+            b[i].setAttribute("href", o + at);
+            b[i].setAttribute("target", "_top");
+            b[i].setAttribute("target", "_top");
+            b[i].className += ' activeWhatsapp';
+        }
+    }
+}
 
-// waShBtn.prototype.isIos = ((navigator.userAgent.match(/Android|iPhone/i) && !navigator.userAgent.match(/iPod|iPad/i)) ? true : false);
+waShBtn.prototype.isIos = ((navigator.userAgent.match(/Android|iPhone/i) && !navigator.userAgent.match(/iPod|iPad/i)) ? true : false);
 
-// var theWaShBtn = new waShBtn();
+var theWaShBtn = new waShBtn();
 // WhatsApp Share End
 
+// Event Program Notification
+
+const eventMainBox = document.querySelector('.event-main-box');
+const eventProgramContent = document.querySelector('.event-program-content');
+const eventNumber = document.querySelector('.event-number');
+const eventBox = document.querySelector('.event-box');
+
+document.querySelector('.event-number').innerHTML = document.querySelectorAll('.evnet-program').length;
+
+eventMainBox.onclick = function () {
+    $('.event-program-content').toggle(900);
+
+    if (eventBox.style.right == '-17px' || eventBox.style.right == '0px') {
+        openEventMainBox();
+    }
+    else {
+        closeEvent();
+    }
+    console.log(eventBox.style.right);
+};
+
+function openEventMainBox() {
+    $(eventNumber).animate({
+        right: 305
+    }, 900),
+        $(eventBox).animate({
+            right: 273
+        }, 900)
+    document.body.style.overflowY = "hidden";
+    return;
+}
+
+const closeEvent = function () {
+    $(eventNumber).animate({
+        right: 14.9
+    }, 900),
+        $(eventBox).animate({
+            right: -17
+        }, 900)
+    document.body.style.overflowY = "scroll";
+    return;
+}
+
+// owl Carousel for Blog
+// todo: use this framework letter when you will work on blog, till keep it comment out !!!
+// $('.owl-carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         600: {
+//             items: 3
+//         },
+//         1000: {
+//             items: 5
+//         }
+//     }
+// });
+
+// Event Notifiaction (API) Asynchronous
+
+// For little Screen
 checkMobileSize(mobileScreenSize);
 mobileScreenSize.addListener(checkMobileSize);

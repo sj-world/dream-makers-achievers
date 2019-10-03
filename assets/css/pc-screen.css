@@ -64,8 +64,8 @@
     }
     /* REVIEW: Home Section */
     .swiper-container {
-        max-width: 92%;
-        height: 590px !important;
+        max-width: 94%;
+        height: 590px;
     }
     .swipe-heading-container {
         position: absolute;

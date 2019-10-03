@@ -4,6 +4,9 @@
         font-size: 25px !important;
     }
     /* REVIEW:  sticky header styling */
+    .home-center-heading {
+        line-height: 20px !important;
+    }
     .top-sticky-header {
         height: 70px;
         padding: 0 20px;

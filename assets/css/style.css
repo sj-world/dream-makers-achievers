@@ -1,8 +1,28 @@
-/* REVIEW: Default Styling */
-
 /* Font Family */
 
 @import url('https://rsms.me/inter/inter.css');
+/* @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+.home-center-heading {
+    line-height: 60px !important;
+}
+
+.swipe-heading-container {
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Cookie', cursive; */
+    font-family: 'Lora', serif;
+    /* letter-spacing: 3px; */
+}
+
+.links-font-family, .para-font-family {
+    font-family: "Inter var", system-ui, sans-serif;
+}
+
+/* REVIEW: Default Styling */
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +41,11 @@ body {
 
 /* REVIEW: Top Sticky Header */
 
+.top-sticky-header nav ul li a {
+    font-size: 10.3px !important;
+    letter-spacing: 0.7px;
+}
+
 .top-sticky-header {
     z-index: 100;
     width: 100%;
@@ -38,7 +63,7 @@ body {
     /* border: 1px solid; */
     list-style: none;
     display: inline-flex;
-    margin: 0 16px !important;
+    margin: 0 20px !important;
 }
 
 .top-sticky-header nav ul {
@@ -52,7 +77,7 @@ body {
     font-size: 11.2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
-    font-size: 11.2px;
+    font-size: 11.5px !important;
     font-weight: bold;
 }
 
@@ -324,6 +349,18 @@ body {
 
 /* REVIEW: Program Section */
 
+.program-top-border {
+    /* border-top: 2.5px solid #007DB8; */
+    border-top: 2px solid rgba(110, 110, 110, 0.253);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.program-para-color {
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+}
+
 .our-program-link-container {
     margin: 0 auto;
     width: 80%;
@@ -451,7 +488,7 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* max-width: 295px; */
-    max-width: 350px;
+    max-width: 305px;
     margin: 20px 1%;
     /* margin: auto; */
     text-align: center;
@@ -473,7 +510,7 @@ body {
 
 .title {
     color: grey;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .card .button {
@@ -551,7 +588,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .team-member {
@@ -634,6 +671,159 @@ body {
     display: inline-block;
 } */
 
+/* Event Program Notification Styling */
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.event-program-content::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.event-program-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.event-program-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.event-program-content {
+    background-color: #fff;
+    border: 1px ridge;
+    width: 290px;
+    height: 310px;
+    position: fixed;
+    right: 0px;
+    top: 137px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.evnet-program {
+    border-bottom: 1px ridge;
+    padding: 10px;
+}
+
+.evnet-program:last-child {
+    margin-bottom: 10px;
+}
+
+.evnet-program:hover {
+    box-shadow: 0px 2px 7px 0.2px rgba(209, 209, 209, 0.664);
+}
+
+@media screen and (min-width: 601px) {
+    .event-number {
+        position: relative;
+        top: -30px;
+        right: 20px;
+        /* transform: rotate(0deg); */
+        /*background-color: rgb(255, 30, 0);
+        */
+        background-color: rgb(238, 238, 238);
+        padding: 2.5px 3.5px;
+        font-size: 10.5px;
+        color: black;
+        font-weight: bold;
+        border: 1.2px ridge rgba(212, 212, 212, 0.993);
+        border-radius: 1.5px;
+        -webkit-border-radius: 1.5px;
+        -moz-border-radius: 1.5px;
+        -ms-border-radius: 1.5px;
+        -o-border-radius: 1.5px;
+    }
+    .event-box {
+        color: black;
+        background-color: rgba(95, 167, 240, 0.829);
+        transform: rotate(-90deg);
+        padding: 3px 5px;
+        height: auto;
+        border: 1px ridge;
+        letter-spacing: 0.5px;
+        border-radius: 1.5px;
+        -webkit-border-radius: 1.5px;
+        -moz-border-radius: 1.5px;
+        -ms-border-radius: 1.5px;
+        -o-border-radius: 1.5px;
+    }
+    .event-main-box:hover {
+        opacity: 1;
+    }
+}
+
+.event-main-box {
+    position: fixed;
+    height: auto;
+    width: auto;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.event-container {
+    position: fixed;
+    height: 100px;
+    top: 150px;
+    z-index: 200000000000;
+}
+
+/* For little Screen */
+
+@media screen and (max-width: 600px) {
+    .event-number {
+        top: -32px;
+        right: 13px;
+        position: relative;
+        transform: rotate(0deg);
+        /*background-color: rgb(238, 238, 238);
+        */
+        /* background-color: rgba(255, 204, 204, 0.993); */
+        background-color: rgba(241, 241, 241, 0.993);
+        padding: 2.5px 3.5px;
+        font-size: 8px;
+        color: black;
+        border: 0.5px ridge rgba(175, 175, 175, 0.993);
+        font-weight: bold;
+        border-radius: 1.5px;
+        -webkit-border-radius: 1.5px;
+        -moz-border-radius: 1.5px;
+        -ms-border-radius: 1.5px;
+        -o-border-radius: 1.5px;
+    }
+    .event-box {
+        background-color: rgba(95, 167, 240, 0.829);
+        color: black;
+        top: 150px !important;
+        transform: rotate(-90deg);
+        padding: 3px 5px;
+        height: auto;
+        letter-spacing: 0.5px;
+        font-size: 13.5px;
+        border-radius: 1.5px;
+        -webkit-border-radius: 1.5px;
+        -moz-border-radius: 1.5px;
+        -ms-border-radius: 1.5px;
+        -o-border-radius: 1.5px;
+    }
+    /* .event-program-content {
+        top: 15px;
+    } */
+}
+
+/* Event Program Notification Styling End */
+
 @media (max-width: 500px) {
     .testimonial-box {
         text-align: center;
@@ -651,5 +841,8 @@ body {
     .top-sticky-header nav ul li a {
         font-size: 12px;
         font-weight: bold;
+    }
+    .swiper-container {
+        height: 650px !important;
     }
 }
