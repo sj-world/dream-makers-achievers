@@ -349,11 +349,24 @@ body {
 
 /* REVIEW: Program Section */
 
+.program-card-heading {
+    color: rgba(0, 66, 97, 0.863);
+}
+
+.program-card-heading-info {
+    color: rgb(0, 66, 97);
+    font-size: 16.5px;
+}
+
 .program-top-border {
     /* border-top: 2.5px solid #007DB8; */
     border-top: 2px solid rgba(110, 110, 110, 0.253);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.program-bottom-border {
+    border-bottom: 2.4px ridge rgba(0, 84, 122, 0.438);
 }
 
 .program-para-color {
@@ -418,7 +431,8 @@ body {
 }
 
 .program-card-styling {
-    box-shadow: 0px 0px 2px 0.1px rgb(187, 182, 182);
+    /* box-shadow: 0px 0px 2px 0.1px rgb(187, 182, 182); */
+    box-shadow: 0px 0px 2px 0.1px rgba(0, 43, 71, 0.61);
     padding: 15px;
     /* border: 1px solid; */
     width: 25%;
