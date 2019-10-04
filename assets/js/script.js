@@ -127,7 +127,7 @@ eBooksMailForm.addEventListener('submit', function (e) {
     e.target.eBooksEmailInput.value = '';
 
     // alert box after form submission
-    alert('Thank You for Mailing us 😄 All eBooks will be send to your email within 12 hours!')
+    alert('Thank You for Mailing us 😄 All eBooks will be send to your email within 24 hours!')
 })
 
 function PostToEbooksDataBase() {
