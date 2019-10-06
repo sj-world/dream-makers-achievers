@@ -798,6 +798,50 @@ body::-webkit-scrollbar-thumb {
 
 /* For little Screen */
 
+/* Read More & Read Less */
+
+.read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    -webkit-transition: max-height .8s ease;
+    -moz-transition: max-height .8s ease;
+    -ms-transition: max-height .8s ease;
+    -o-transition: max-height .8s ease;
+}
+
+.read-more-toggle {
+    display: none;
+}
+
+.read-more-toggle-label {
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    /* margin: .5em; */
+    font-size: .8em;
+    background: #555;
+    color: white;
+}
+
+.read-more-toggle-label:after {
+    content: "More";
+    display: inline-block;
+}
+
+.read-more-toggle:checked+.read-more-content {
+    display: block;
+    /* css animation won't work with "auto"; set to some height larger
+      than the content */
+    max-height: 1000px;
+}
+
+.read-more-toggle:checked+.read-more-content+.read-more-toggle-label:after {
+    content: "Less";
+}
+
 @media screen and (max-width: 600px) {
     .event-number {
         top: -32px;
