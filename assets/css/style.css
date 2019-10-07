@@ -17,6 +17,10 @@
     /* letter-spacing: 3px; */
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .links-font-family, .para-font-family {
     font-family: "Inter var", system-ui, sans-serif;
 }
