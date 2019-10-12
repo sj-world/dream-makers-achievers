@@ -227,4 +227,16 @@
         margin-top: 25px;
         margin-bottom: 50px !important;
     }
+    /* Recruitment Link Container */
+    .recruitment-link-container {
+        /* border: 2px solid; */
+        position: absolute;
+        top: 70px;
+        right: 100px;
+        background-color: #fff;
+    }
+    .recruitment-link-border {
+        /* border: 1px solid black; */
+        display: block;
+    }
 }

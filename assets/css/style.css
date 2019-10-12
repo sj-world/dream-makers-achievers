@@ -10,6 +10,14 @@
     line-height: 60px !important;
 }
 
+.section-heading {
+    font-size: 25px !important;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.66px;
+}
+
 .swipe-heading-container {
     /* font-family: 'Dancing Script', cursive; */
     /* font-family: 'Cookie', cursive; */
@@ -18,7 +26,7 @@
 }
 
 .text-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .links-font-family, .para-font-family {
@@ -92,6 +100,10 @@ body {
 .top-sticky-header nav ul li a:focus {
     color: rgb(60, 91, 135) !important;
     font-weight: 600;
+}
+
+.recruitment:hover {
+    color: rgb(116, 188, 212) !important;
 }
 
 /* REVIEW: Submit Alert Box */
@@ -911,3 +923,14 @@ body::-webkit-scrollbar-thumb {
         height: 650px !important;
     }
 }
+
+/* Recruitment Styling */
+
+/* .recruitment {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.966);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+} */

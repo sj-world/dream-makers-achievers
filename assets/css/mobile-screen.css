@@ -35,6 +35,11 @@
         text-align: center;
         margin: 0 !important;
     }
+    .recruitment {
+        font-size: 10.5px;
+        color: hsl(0, 0%, 100%) !important;
+        font-weight: 400 !important;
+    }
     .top-sticky-header nav ul li a {
         /* font-size: 13px; */
         font-size: 10.5px;

@@ -208,7 +208,7 @@ function scrollFunction() {
 // REVIEW: smooth scrolling setup using jquery, when clicking on links
 $('a[href*="#"]').on('click', function (e) {
     $('html,body').animate({
-        scrollTop: $($(this).attr('href')).offset().top - 80
+        scrollTop: $($(this).attr('href')).offset().top - 100
     }, 500);
     e.preventDefault();
 });
@@ -490,7 +490,7 @@ eventMainBox.onclick = function () {
     else {
         closeEvent();
     }
-    console.log(eventBox.style.right);
+    // console.log(eventBox.style.right);
 };
 
 function openEventMainBox() {
