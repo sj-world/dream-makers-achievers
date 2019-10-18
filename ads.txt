@@ -1,1 +1,2 @@
 google.com, pub-9016071973507062, DIRECT, f08c47fec0942fa0
+Infolinks.com, 3213986 , DIRECT
