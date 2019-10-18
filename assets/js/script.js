@@ -7,49 +7,49 @@
 
 // REVIEW: top sticky header nav-bar open-close setup
 
-var mobileScreenSize = window.matchMedia("(max-width: 972px)");
-var pcScreenSize = window.matchMedia("(min-width: 973px)");
+var mobileScreenSize = window.matchMedia('(max-width: 972px)');
+var pcScreenSize = window.matchMedia('(min-width: 973px)');
 var openBar = document.querySelector('.fa-align-right');
 var closeBar = document.querySelector('.fa-times-rectangle');
 var navContainer = document.querySelector('.top-sticky-header > nav');
 
 function openSideNav() {
-    navContainer.style.left = "0";
+    navContainer.style.left = '0';
 }
 
 function closeSideNav() {
-    navContainer.style.left = "-155px";
+    navContainer.style.left = '-155px';
 }
 
 function toggleOpenBarIcon() {
-    openBar.style.opacity = "0";
-    openBar.style.transition = "0.6s";
+    openBar.style.opacity = '0';
+    openBar.style.transition = '0.6s';
 
     setTimeout(() => {
-        openBar.style.display = "none";
-        closeBar.style.display = "block";
-        closeBar.style.opacity = "1";
-        closeBar.style.transition = "0.5s";
+        openBar.style.display = 'none';
+        closeBar.style.display = 'block';
+        closeBar.style.opacity = '1';
+        closeBar.style.transition = '0.5s';
     }, 400);
 }
 
 function toggleCloseBarIcon() {
-    closeBar.style.opacity = "0";
-    closeBar.style.transition = "0.5s";
+    closeBar.style.opacity = '0';
+    closeBar.style.transition = '0.5s';
     setTimeout(() => {
-        closeBar.style.display = "none";
-        openBar.style.display = "block";
-        openBar.style.opacity = "1";
-        openBar.style.transition = "0.5s";
+        closeBar.style.display = 'none';
+        openBar.style.display = 'block';
+        openBar.style.opacity = '1';
+        openBar.style.transition = '0.5s';
     }, 400);
 }
 
 function toggleNavBar() {
-    openBar.style.display = "block";
+    openBar.style.display = 'block';
 
     openBar.addEventListener('click', function () {
         openSideNav();
-        document.body.style.overflowY = "hidden";
+        document.body.style.overflowY = 'hidden';
 
         toggleOpenBarIcon();
 
@@ -57,7 +57,7 @@ function toggleNavBar() {
 
     closeBar.addEventListener('click', function () {
         closeSideNav();
-        document.body.style.overflowY = "scroll";
+        document.body.style.overflowY = 'scroll';
         toggleCloseBarIcon();
 
     });
@@ -68,12 +68,12 @@ function toggleNavBar() {
 $(document.body).mousedown(function (event) {
     var target = $(event.target);
     if (target.parents().andSelf().is(openBar) || target.parents().andSelf().is(navContainer)) {
-        navContainer.style.left = "0px";
+        navContainer.style.left = '0px';
     }
     else {
-        navContainer.style.left = "-155px";
-        toggleCloseBarIcon()
-        document.body.style.overflowY = "scroll";
+        navContainer.style.left = '-155px';
+        toggleCloseBarIcon();
+        document.body.style.overflowY = 'scroll';
     }
 });
 
@@ -81,27 +81,27 @@ function checkMobileSize(size) {
     if (size.matches) {
         toggleNavBar();
     } else {
-        closeBar.style.display = "none";
-        openBar.style.display = "none";
+        closeBar.style.display = 'none';
+        openBar.style.display = 'none';
     }
 }
 
 // REVIEW: close navbar when clicking on links
 $('a[href*="#"]').on('click', function () {
-    document.body.style.overflowY = "scroll";
-    document.querySelector('nav').style.left = "-155px";
+    document.body.style.overflowY = 'scroll';
+    document.querySelector('nav').style.left = '-155px';
 
     function checkMobileSize(size) {
         if (size.matches) {
             toggleNavBar();
             toggleCloseBarIcon();
         } else {
-            closeBar.style.display = "none";
-            openBar.style.display = "none";
+            closeBar.style.display = 'none';
+            openBar.style.display = 'none';
         }
     }
-    checkMobileSize(mobileScreenSize)
-    mobileScreenSize.addListener(checkMobileSize)
+    checkMobileSize(mobileScreenSize);
+    mobileScreenSize.addListener(checkMobileSize);
 });
 
 // REVIEW: open facebook page when clicking on fb icon
@@ -110,12 +110,12 @@ if (pcScreenSize.matches) {
     document.querySelector('.facebook').addEventListener('click', function () {
 
         const a = document.createElement('a');
-        a.href = "https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/";
+        a.href = 'https://www.facebook.com/Dream-Makers-Achievers-1382266625246369/';
         a.target = '_blank';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-    })
+    });
 }
 
 // eBooks Email Submission
@@ -127,17 +127,17 @@ eBooksMailForm.addEventListener('submit', function (e) {
     e.target.eBooksEmailInput.value = '';
 
     // alert box after form submission
-    alert('Thank You for Mailing us 😄 All eBooks will be send to your email within 24 hours!')
+    alert('Thank You for Mailing us 😄 All eBooks will be send to your email within 24 hours!');
 });
 
 function PostToEbooksDataBase() {
-    const eBooksEmailInput = $("#eBooksEmailInput").val();
+    const eBooksEmailInput = $('#eBooksEmailInput').val();
 
     $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSfDDXseSzx8xV8R_zip-_cAYMFOus98K45cfN_mjjh-mler_Q/formResponse",
-        data: { "emailAddress": eBooksEmailInput, },
-        type: "POST",
-        dataType: "xml",
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSfDDXseSzx8xV8R_zip-_cAYMFOus98K45cfN_mjjh-mler_Q/formResponse',
+        data: { 'emailAddress': eBooksEmailInput, },
+        type: 'POST',
+        dataType: 'xml',
     });
     return;
 }
@@ -146,19 +146,19 @@ function PostToEbooksDataBase() {
 
 function postToDataBase() {
 
-    var firstName = $("#firstName").val();
-    var lastName = $("#lastName").val();
-    var mobile = $("#mobile").val();
-    var question = $("#question").val();
-    var message = $("#message").val();
-    var email = $("#email").val();
-    var address = $("#address").val();
+    var firstName = $('#firstName').val();
+    var lastName = $('#lastName').val();
+    var mobile = $('#mobile').val();
+    var question = $('#question').val();
+    var message = $('#message').val();
+    var email = $('#email').val();
+    var address = $('#address').val();
 
     $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLScxFD1DDFzIOfxt4TVJNbcNBGxrItc7vho4cpz_CaQ3D2cZbA/formResponse",
-        data: { "entry.1154047464": firstName, "entry.2068507921": lastName, "entry.1825414465": mobile, "entry.479585436": question, "entry.479585436": message, "entry.1229940529": email, "entry.1192885676": address },
-        type: "POST",
-        dataType: "xml",
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScxFD1DDFzIOfxt4TVJNbcNBGxrItc7vho4cpz_CaQ3D2cZbA/formResponse',
+        data: { 'entry.1154047464': firstName, 'entry.2068507921': lastName, 'entry.1825414465': mobile, 'entry.479585436': question, 'entry.479585436': message, 'entry.1229940529': email, 'entry.1192885676': address },
+        type: 'POST',
+        dataType: 'xml',
         // success: function () {
         //     console.log('your message has been sent ..!')
         // },
@@ -171,7 +171,7 @@ function postToDataBase() {
 }
 
 var form = document.querySelector('#form');
-form.addEventListener("submit", function (e) {
+form.addEventListener('submit', function (e) {
     postToDataBase();
 
     e.preventDefault();    //stop form from submitting default
@@ -184,24 +184,24 @@ form.addEventListener("submit", function (e) {
     e.target.address.value = '';
 
     // alert box after form submission
-    document.querySelector('.submit-box-alert').style.display = "block";
+    document.querySelector('.submit-box-alert').style.display = 'block';
     setTimeout(() => {
-        document.querySelector('.submit-box-alert').style.display = "none";
+        document.querySelector('.submit-box-alert').style.display = 'none';
     }, 7000);
 });
 
 // REVIEW: back to top icon
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction(); };
 
 function scrollFunction() {
     var goTop = document.querySelector('.go-top');
 
     if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
         goTop.style.opacity = 1;
-        goTop.style.display = "block";
+        goTop.style.display = 'block';
     } else {
-        goTop.style.opacity = "0";
-        goTop.style.display = "none";
+        goTop.style.opacity = '0';
+        goTop.style.display = 'none';
     }
 }
 
@@ -252,8 +252,8 @@ var swiper = new Swiper('.swiper-container', {
 // TODO: Program Section
 let programLinks = document.querySelectorAll('.program-link');
 var firstLink = document.querySelector('.first');
-firstLink.style.backgroundColor = "#007EB7";
-firstLink.style.color = "white";
+firstLink.style.backgroundColor = '#007EB7';
+firstLink.style.color = 'white';
 
 const secondLink = document.querySelector('.second');
 const thirdLink = document.querySelector('.third');
@@ -266,163 +266,163 @@ const ProgramThirdBox = document.querySelector('.program-link-3-container');
 const ProgramFourthBox = document.querySelector('.program-link-4-container');
 
 // Program boxes default Setting
-ProgramSecondBox.style.display = "none";
-ProgramThirdBox.style.display = "none";
-ProgramFourthBox.style.display = "none";
+ProgramSecondBox.style.display = 'none';
+ProgramThirdBox.style.display = 'none';
+ProgramFourthBox.style.display = 'none';
 
 firstLink.onclick = function () {
     // first link
-    firstLink.style.backgroundColor = "#007EB7";
-    firstLink.style.color = "white";
-    firstLink.style.border = "1px solid #007EB7";
+    firstLink.style.backgroundColor = '#007EB7';
+    firstLink.style.color = 'white';
+    firstLink.style.border = '1px solid #007EB7';
 
     // second link
-    secondLink.style.backgroundColor = "white";
-    secondLink.style.color = "#007EB7";
+    secondLink.style.backgroundColor = 'white';
+    secondLink.style.color = '#007EB7';
 
     // third link color
-    thirdLink.style.backgroundColor = "white";
-    thirdLink.style.color = "#007EB7";
+    thirdLink.style.backgroundColor = 'white';
+    thirdLink.style.color = '#007EB7';
 
     // fourth link
-    fourthLink.style.backgroundColor = "white";
-    fourthLink.style.color = "#007EB7";
+    fourthLink.style.backgroundColor = 'white';
+    fourthLink.style.color = '#007EB7';
 
     // Program display
-    ProgramfirstBox.style.display = "block";
-    ProgramSecondBox.style.display = "none";
-    ProgramThirdBox.style.display = "none";
-    ProgramFourthBox.style.display = "none";
-}
+    ProgramfirstBox.style.display = 'block';
+    ProgramSecondBox.style.display = 'none';
+    ProgramThirdBox.style.display = 'none';
+    ProgramFourthBox.style.display = 'none';
+};
 
 secondLink.onclick = function () {
     // first link
-    firstLink.style.backgroundColor = "white";
-    firstLink.style.color = "#007EB7";
+    firstLink.style.backgroundColor = 'white';
+    firstLink.style.color = '#007EB7';
 
     // second link
-    secondLink.style.backgroundColor = "#007EB7";
-    secondLink.style.color = "white";
+    secondLink.style.backgroundColor = '#007EB7';
+    secondLink.style.color = 'white';
 
     // third link color
-    thirdLink.style.backgroundColor = "white";
-    thirdLink.style.color = "#007EB7";
+    thirdLink.style.backgroundColor = 'white';
+    thirdLink.style.color = '#007EB7';
 
     // fourth link
-    fourthLink.style.backgroundColor = "white";
-    fourthLink.style.color = "#007EB7";
+    fourthLink.style.backgroundColor = 'white';
+    fourthLink.style.color = '#007EB7';
 
     // Program display
-    ProgramfirstBox.style.display = "none";
-    ProgramSecondBox.style.display = "block";
-    ProgramThirdBox.style.display = "none";
-    ProgramFourthBox.style.display = "none";
-}
+    ProgramfirstBox.style.display = 'none';
+    ProgramSecondBox.style.display = 'block';
+    ProgramThirdBox.style.display = 'none';
+    ProgramFourthBox.style.display = 'none';
+};
 
 thirdLink.onclick = function () {
     // first link
-    firstLink.style.backgroundColor = "white";
-    firstLink.style.color = "#007EB7";
+    firstLink.style.backgroundColor = 'white';
+    firstLink.style.color = '#007EB7';
 
     // second link
-    secondLink.style.backgroundColor = "white";
-    secondLink.style.color = "#007EB7";
+    secondLink.style.backgroundColor = 'white';
+    secondLink.style.color = '#007EB7';
 
     // third link color
-    thirdLink.style.backgroundColor = "#007EB7";
-    thirdLink.style.color = "white";
+    thirdLink.style.backgroundColor = '#007EB7';
+    thirdLink.style.color = 'white';
 
     // fourth link
-    fourthLink.style.backgroundColor = "white";
-    fourthLink.style.color = "#007EB7";
+    fourthLink.style.backgroundColor = 'white';
+    fourthLink.style.color = '#007EB7';
 
     // Program display
-    ProgramfirstBox.style.display = "none";
-    ProgramSecondBox.style.display = "none";
-    ProgramThirdBox.style.display = "block";
-    ProgramFourthBox.style.display = "none";
-}
+    ProgramfirstBox.style.display = 'none';
+    ProgramSecondBox.style.display = 'none';
+    ProgramThirdBox.style.display = 'block';
+    ProgramFourthBox.style.display = 'none';
+};
 
 fourthLink.onclick = function () {
     // first link
-    firstLink.style.backgroundColor = "white";
-    firstLink.style.color = "#007EB7";
+    firstLink.style.backgroundColor = 'white';
+    firstLink.style.color = '#007EB7';
 
     // second link
-    secondLink.style.backgroundColor = "white";
-    secondLink.style.color = "#007EB7";
+    secondLink.style.backgroundColor = 'white';
+    secondLink.style.color = '#007EB7';
 
     // third link color
-    thirdLink.style.backgroundColor = "white";
-    thirdLink.style.color = "#007EB7";
+    thirdLink.style.backgroundColor = 'white';
+    thirdLink.style.color = '#007EB7';
 
     // fourth link
-    fourthLink.style.backgroundColor = "#007EB7";
-    fourthLink.style.color = "white";
+    fourthLink.style.backgroundColor = '#007EB7';
+    fourthLink.style.color = 'white';
 
     // Program display
-    ProgramfirstBox.style.display = "none";
-    ProgramSecondBox.style.display = "none";
-    ProgramThirdBox.style.display = "none";
-    ProgramFourthBox.style.display = "block";
-}
+    ProgramfirstBox.style.display = 'none';
+    ProgramSecondBox.style.display = 'none';
+    ProgramThirdBox.style.display = 'none';
+    ProgramFourthBox.style.display = 'block';
+};
 
 // Counsellers section
 
 function checkCity() {
-    var x = document.getElementById("city");
+    var x = document.getElementById('city');
     var cityName = x.selectedIndex;
-    var counsellersCity = document.getElementById("counsellers_city");
+    var counsellersCity = document.getElementById('counsellers_city');
     counsellersCity.innerHTML = x.options[cityName].text;
 
     // If Kanpur
     const counsellers_in_kanpur = document.querySelector('.counsellers_in_kanpur');
     if (x.options[cityName].text == 'Kanpur') {
-        counsellers_in_kanpur.style.display = "block";
+        counsellers_in_kanpur.style.display = 'block';
     } else {
-        counsellers_in_kanpur.style.display = "none";
+        counsellers_in_kanpur.style.display = 'none';
     }
     // If Allahabad
     const counsellers_in_allahabad = document.querySelector('.counsellers_in_allahabad');
     if (x.options[cityName].text == 'Allahabad') {
-        counsellers_in_allahabad.style.display = "block";
+        counsellers_in_allahabad.style.display = 'block';
     } else {
-        counsellers_in_allahabad.style.display = "none";
+        counsellers_in_allahabad.style.display = 'none';
     }
     // If Delhi
     const counsellers_in_delhi = document.querySelector('.counsellers_in_delhi');
     if (x.options[cityName].text == 'Delhi') {
-        counsellers_in_delhi.style.display = "block";
+        counsellers_in_delhi.style.display = 'block';
     } else {
-        counsellers_in_delhi.style.display = "none";
+        counsellers_in_delhi.style.display = 'none';
     }
     // If Lucknow
     const counsellers_in_lukhnow = document.querySelector('.counsellers_in_lukhnow');
     if (x.options[cityName].text == 'Lucknow') {
-        counsellers_in_lukhnow.style.display = "block";
+        counsellers_in_lukhnow.style.display = 'block';
     } else {
-        counsellers_in_lukhnow.style.display = "none";
+        counsellers_in_lukhnow.style.display = 'none';
     }
     // If lakhimpur kheri
     const counsellers_in_lakhimpur = document.querySelector('.counsellers_in_lakhimpur');
     if (x.options[cityName].text == 'Lakhimpur Kheri') {
-        counsellers_in_lakhimpur.style.display = "block";
+        counsellers_in_lakhimpur.style.display = 'block';
     } else {
-        counsellers_in_lakhimpur.style.display = "none";
+        counsellers_in_lakhimpur.style.display = 'none';
     }
     // If Gorakhpur
     const counsellers_in_gorakhpur = document.querySelector('.counsellers_in_gorakhpur');
     if (x.options[cityName].text == 'Gorakhpur') {
-        counsellers_in_gorakhpur.style.display = "block";
+        counsellers_in_gorakhpur.style.display = 'block';
     } else {
-        counsellers_in_gorakhpur.style.display = "none";
+        counsellers_in_gorakhpur.style.display = 'none';
     }
     // If Gorakhpur
     const counsellers_in_jaunpur = document.querySelector('.counsellers_in_jaunpur');
     if (x.options[cityName].text == 'Jaunpur') {
-        counsellers_in_jaunpur.style.display = "block";
+        counsellers_in_jaunpur.style.display = 'block';
     } else {
-        counsellers_in_jaunpur.style.display = "none";
+        counsellers_in_jaunpur.style.display = 'none';
     }
 }
 
@@ -445,27 +445,27 @@ function checkCity() {
 
 waShBtn = function () {
     if (this.isIos === true) {
-        var b = [].slice.call(document.querySelectorAll(".wa_btn"));
+        var b = [].slice.call(document.querySelectorAll('.wa_btn'));
         for (var i = 0; i < b.length; i++) {
-            var t = b[i].getAttribute("data-text");
-            var u = b[i].getAttribute("data-href");
-            var o = b[i].getAttribute("href");
-            var at = "?text=" + encodeURIComponent(t);
+            var t = b[i].getAttribute('data-text');
+            var u = b[i].getAttribute('data-href');
+            var o = b[i].getAttribute('href');
+            var at = '?text=' + encodeURIComponent(t);
             if (t) {
-                at += "%20%0A";
+                at += '%20%0A';
             }
             if (u) {
                 at += encodeURIComponent(u);
             } else {
                 at += encodeURIComponent(document.URL);
             }
-            b[i].setAttribute("href", o + at);
-            b[i].setAttribute("target", "_top");
-            b[i].setAttribute("target", "_top");
+            b[i].setAttribute('href', o + at);
+            b[i].setAttribute('target', '_top');
+            b[i].setAttribute('target', '_top');
             b[i].className += ' activeWhatsapp';
         }
     }
-}
+};
 
 waShBtn.prototype.isIos = ((navigator.userAgent.match(/Android|iPhone/i) && !navigator.userAgent.match(/iPod|iPad/i)) ? true : false);
 
@@ -499,8 +499,8 @@ function openEventMainBox() {
     }, 900),
         $(eventBox).animate({
             right: 273
-        }, 900)
-    document.body.style.overflowY = "hidden";
+        }, 900);
+    document.body.style.overflowY = 'hidden';
     return;
 }
 
@@ -510,10 +510,10 @@ const closeEvent = function () {
     }, 900),
         $(eventBox).animate({
             right: -17
-        }, 900)
-    document.body.style.overflowY = "scroll";
+        }, 900);
+    document.body.style.overflowY = 'scroll';
     return;
-}
+};
 
 // owl Carousel for Blog
 // todo: use this framework letter when you will work on blog, till keep it comment out !!!
@@ -534,7 +534,13 @@ const closeEvent = function () {
 //     }
 // });
 
-// Event Notifiaction (API) Asynchronous
+// Vacancy Notification
+const vacancyDataBox = document.querySelector('.vacancy-data-box');
+const vacancySideBarIcon = document.querySelector('.fixed-vacancy-sideBar-icon');
+$('.fixed-vacancy-sideBar-icon').click(function () {
+    vacancySideBarIcon.classList.toggle('toggle-vacancy-sideBar-icon');
+    vacancyDataBox.classList.toggle('toggle-vacancy-dataBox');
+});
 
 // For little Screen
 checkMobileSize(mobileScreenSize);
