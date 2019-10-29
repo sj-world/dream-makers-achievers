@@ -706,6 +706,15 @@ body {
 
 /* Vacancy Program Styling */
 
+.vacancy1 {
+    padding: 7px 5px;
+    box-shadow: 0px 0px 1px 0.3px rgba(0, 0, 0, 0.459);
+}
+
+.vacancy1:hover {
+    box-shadow: 0px 0px 5px 0.3px rgba(0, 0, 0, 0.767);
+}
+
 .vacancy-data-box::-webkit-scrollbar {
     width: 0.3em;
 }
